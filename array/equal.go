@@ -7,4 +7,10 @@ func EqFloat64(v1, v2 []float64) bool {
 	}
 
 	for i, v1i := range v1 {
-		if 
+		if v1i != v2[i] {
+			return false
+		}
+	}
+
+	return true
+}
