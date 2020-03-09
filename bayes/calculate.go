@@ -4,4 +4,6 @@ package bayes
 type Category int
 
 // NewDatum creates new data.
-func NewDatum(v inte
+func NewDatum(v interface{}, categories ...Category) Datum {
+	d := Datum{
+		Va
