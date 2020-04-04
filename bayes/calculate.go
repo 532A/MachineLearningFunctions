@@ -7,4 +7,6 @@ type Category int
 func NewDatum(v interface{}, categories ...Category) Datum {
 	d := Datum{
 		Value:      v,
-		Categories: make(map[Categ
+		Categories: make(map[Category]interface{}, len(categories)),
+	}
+	for 
