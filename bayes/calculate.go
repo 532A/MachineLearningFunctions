@@ -6,4 +6,5 @@ type Category int
 // NewDatum creates new data.
 func NewDatum(v interface{}, categories ...Category) Datum {
 	d := Datum{
-		Va
+		Value:      v,
+		Categories: make(map[Categ
