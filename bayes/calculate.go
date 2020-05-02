@@ -15,4 +15,7 @@ func NewDatum(v interface{}, categories ...Category) Datum {
 	return d
 }
 
-// Datum and its associated categor
+// Datum and its associated categories.
+type Datum struct {
+	Value      interface{}
+	Cate
