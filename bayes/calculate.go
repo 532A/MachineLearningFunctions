@@ -10,4 +10,9 @@ func NewDatum(v interface{}, categories ...Category) Datum {
 		Categories: make(map[Category]interface{}, len(categories)),
 	}
 	for _, c := range categories {
-		d.Categories[c] = struct{}{
+		d.Categories[c] = struct{}{}
+	}
+	return d
+}
+
+// Datum and its associated categor
