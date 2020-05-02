@@ -9,4 +9,5 @@ func NewDatum(v interface{}, categories ...Category) Datum {
 		Value:      v,
 		Categories: make(map[Category]interface{}, len(categories)),
 	}
-	for 
+	for _, c := range categories {
+		d.Categories[c] = struct{}{
