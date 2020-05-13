@@ -22,3 +22,6 @@ type Datum struct {
 }
 
 // Data is a collection.
+type Data []Datum
+
+// Probability of the data being in a 
