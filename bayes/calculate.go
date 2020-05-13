@@ -18,4 +18,7 @@ func NewDatum(v interface{}, categories ...Category) Datum {
 // Datum and its associated categories.
 type Datum struct {
 	Value      interface{}
-	Cate
+	Categories map[Category]interface{}
+}
+
+// Data is a collection.
