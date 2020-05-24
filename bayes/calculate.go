@@ -24,4 +24,5 @@ type Datum struct {
 // Data is a collection.
 type Data []Datum
 
-// Probability of the data being in a 
+// Probability of the data being in a category.
+func (d Data) Probability(is Category, given ...C
