@@ -25,4 +25,5 @@ type Datum struct {
 type Data []Datum
 
 // Probability of the data being in a category.
-func (d Data) Probability(is Category, given ...C
+func (d Data) Probability(is Category, given ...Category) float64 {
+	filtered := filter(d, given..
