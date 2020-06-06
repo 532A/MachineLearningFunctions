@@ -30,4 +30,5 @@ func (d Data) Probability(is Category, given ...Category) float64 {
 	if len(filtered) == 0 {
 		return 0
 	}
-	matchesIn
+	matchesInFilteredData := filter(filtered, is)
+	return fl
