@@ -31,4 +31,7 @@ func (d Data) Probability(is Category, given ...Category) float64 {
 		return 0
 	}
 	matchesInFilteredData := filter(filtered, is)
-	return float64(len(matchesInFilteredData)) / float64(len(
+	return float64(len(matchesInFilteredData)) / float64(len(filtered))
+}
+
+func filter(d Data, categori
