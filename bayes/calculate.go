@@ -44,4 +44,6 @@ func filter(d Data, categories ...Category) (filtered Data) {
 	return
 }
 
-func matches(dm Datum, categories ...Cat
+func matches(dm Datum, categories ...Category) bool {
+	for _, c := range categories {
+		if _, 
