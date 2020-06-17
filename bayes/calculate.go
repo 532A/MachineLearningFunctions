@@ -37,4 +37,8 @@ func (d Data) Probability(is Category, given ...Category) float64 {
 func filter(d Data, categories ...Category) (filtered Data) {
 	for _, dm := range d {
 		if !matches(dm, categories...) {
-			
+			continue
+		}
+		filtered = append(filtered, dm)
+	}
+	retu
