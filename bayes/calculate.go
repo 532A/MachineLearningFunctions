@@ -41,4 +41,7 @@ func filter(d Data, categories ...Category) (filtered Data) {
 		}
 		filtered = append(filtered, dm)
 	}
-	retu
+	return
+}
+
+func matches(dm Datum, categories ...Cat
