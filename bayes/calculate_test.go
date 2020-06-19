@@ -2,4 +2,5 @@ package bayes
 
 import "testing"
 
-fu
+func TestProbability(t *testing.T) {
+	categoryDog, c
