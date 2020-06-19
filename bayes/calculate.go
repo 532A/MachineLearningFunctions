@@ -46,4 +46,8 @@ func filter(d Data, categories ...Category) (filtered Data) {
 
 func matches(dm Datum, categories ...Category) bool {
 	for _, c := range categories {
-		if _, 
+		if _, ok := dm.Categories[c]; !ok {
+			return false
+		}
+	}
+	retu
