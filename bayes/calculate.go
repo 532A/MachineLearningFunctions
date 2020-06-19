@@ -50,4 +50,5 @@ func matches(dm Datum, categories ...Category) bool {
 			return false
 		}
 	}
-	retu
+	return true
+}
