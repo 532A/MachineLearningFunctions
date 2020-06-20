@@ -5,4 +5,4 @@ import "testing"
 func TestProbability(t *testing.T) {
 	categoryDog, categoryCat := Category(1), Category(2)
 
-	categ
+	categoryBrownHair, categoryBlondeHair := Category(
