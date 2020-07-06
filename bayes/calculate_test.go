@@ -9,4 +9,7 @@ func TestProbability(t *testing.T) {
 	categoryBlueEyes, categoryBrownEyes := Category(3), Category(4)
 
 	tests := []struct {
-		n
+		name     string
+		data     Data
+		is       Category
+	
