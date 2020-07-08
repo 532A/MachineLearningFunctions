@@ -12,4 +12,8 @@ func TestProbability(t *testing.T) {
 		name     string
 		data     Data
 		is       Category
-	
+		given    []Category
+		expected float64
+	}{
+		{
+			n
