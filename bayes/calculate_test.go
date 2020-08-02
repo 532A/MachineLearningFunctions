@@ -16,4 +16,6 @@ func TestProbability(t *testing.T) {
 		expected float64
 	}{
 		{
-			n
+			name: "dog or cat",
+			data: []Datum{
+			
