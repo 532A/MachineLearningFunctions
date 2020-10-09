@@ -26,4 +26,6 @@ func TestProbability(t *testing.T) {
 			expected: 0.5,
 		},
 		{
-			name: "brow
+			name: "brown or blue eyes",
+			data: []Datum{
+				NewD
