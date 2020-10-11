@@ -28,4 +28,5 @@ func TestProbability(t *testing.T) {
 		{
 			name: "brown or blue eyes",
 			data: []Datum{
-				NewD
+				NewDatum("John", categoryBlueEyes, categoryBlondeHair),
+		
