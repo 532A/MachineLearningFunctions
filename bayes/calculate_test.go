@@ -31,4 +31,4 @@ func TestProbability(t *testing.T) {
 				NewDatum("John", categoryBlueEyes, categoryBlondeHair),
 				NewDatum("Jane", categoryBlueEyes, categoryBlondeHair),
 				NewDatum("Janet", categoryBlueEyes, categoryBrownHair),
-				NewD
+				NewDatum("June", categoryBrownEyes, categoryBro
