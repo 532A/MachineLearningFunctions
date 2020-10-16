@@ -34,4 +34,5 @@ func TestProbability(t *testing.T) {
 				NewDatum("June", categoryBrownEyes, categoryBrownHair),
 			},
 			is:       categoryBlondeHair,
-	
+			given:    []Category{categoryBlueEyes},
+			expected: 
