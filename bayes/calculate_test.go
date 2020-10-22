@@ -38,4 +38,6 @@ func TestProbability(t *testing.T) {
 			expected: float64(2) / float64(3),
 		},
 		{
-			name: "d
+			name: "dog, cat or lizard",
+			data: []Datum{
+				NewDatum(
