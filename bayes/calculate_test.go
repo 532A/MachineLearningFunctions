@@ -35,4 +35,7 @@ func TestProbability(t *testing.T) {
 			},
 			is:       categoryBlondeHair,
 			given:    []Category{categoryBlueEyes},
-			expected: 
+			expected: float64(2) / float64(3),
+		},
+		{
+			name: "d
