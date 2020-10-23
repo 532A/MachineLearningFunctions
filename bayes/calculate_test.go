@@ -42,4 +42,5 @@ func TestProbability(t *testing.T) {
 			data: []Datum{
 				NewDatum("Felix", categoryCat),
 				NewDatum("Shep", categoryDog),
-			
+			},
+			is:       Category(3),             // 
