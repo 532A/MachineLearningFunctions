@@ -43,4 +43,5 @@ func TestProbability(t *testing.T) {
 				NewDatum("Felix", categoryCat),
 				NewDatum("Shep", categoryDog),
 			},
-			is:       Category(3),             // 
+			is:       Category(3),             // Lizard
+			given:    []Category{Category(4)}, // 
