@@ -40,4 +40,6 @@ func TestProbability(t *testing.T) {
 		{
 			name: "dog, cat or lizard",
 			data: []Datum{
-				NewDatum(
+				NewDatum("Felix", categoryCat),
+				NewDatum("Shep", categoryDog),
+			
