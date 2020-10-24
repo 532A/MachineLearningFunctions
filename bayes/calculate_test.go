@@ -49,4 +49,5 @@ func TestProbability(t *testing.T) {
 		},
 	}
 
-	for _, 
+	for _, test := range tests {
+		actual := tes
