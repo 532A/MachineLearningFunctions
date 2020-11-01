@@ -50,4 +50,5 @@ func TestProbability(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual := tes
+		actual := test.data.Probability(test.is, test.given...)
+		if te
