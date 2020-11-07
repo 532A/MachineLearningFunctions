@@ -52,4 +52,4 @@ func TestProbability(t *testing.T) {
 	for _, test := range tests {
 		actual := test.data.Probability(test.is, test.given...)
 		if test.expected != actual {
-			t.Errorf("%s: expect
+			t.Errorf("%s: expected %v, got %v", test.name, test.expected,
