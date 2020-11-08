@@ -73,3 +73,43 @@ func main() {
 			if y >= 0 {
 				line = append(line, xy{
 					X: x,
+					Y: y,
+				})
+			}
+		}
+
+		p, err := plot.New()
+		if err != nil {
+			fmt.Println("Error creating Plot: ", err)
+			os.Exit(-1)
+		}
+
+		p.Title.Text = "Demonstration of TangentSlope"
+		p.X.Min = minXValue
+		p.X.Max = maxXValue
+		p.X.Padding = 0
+		p.X.Label.Text = "X"
+		p.Y.Min = minYValue
+		p.Y.Max = maxYValue
+		p.Y.Padding = 0
+		p.Y.Label.Text = "Y"
+		p.Y.Dashes = []vg.Length{5.0, 20.0, 35.0}
+		plotutil.AddLines(p, fys, line)
+
+		img := image.NewRGBA(imgSize)
+		c := draw.NewCanvas(vgimg.NewWith(vgimg.UseImage(img)), width, height)
+		p.Draw(c)
+
+		// Add the image to the output.
+		palettedImage := image.NewPaletted(imgSize, palette.Plan9)
+		imgdraw.Draw(palettedImage, palettedImage.Rect, img, imgSize.Min, imgdraw.Over)
+		anim.Delay = append(anim.Delay, delay)
+		anim.Image = append(anim.Image, palettedImage)
+	}
+
+	gif.EncodeAll(file, &anim)
+}
+
+type xy struct {
+	X, Y float64
+}
