@@ -5,4 +5,7 @@ func TangentSlope(x, d float64, f func(x float64) (y float64)) Line {
 	xi, xii := x-d, x
 	yi, yii := f(xi), f(xii)
 
-	rise
+	rise, run := yii-yi, xii-xi
+	m := rise / run
+
+	// When x 
