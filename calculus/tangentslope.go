@@ -8,4 +8,5 @@ func TangentSlope(x, d float64, f func(x float64) (y float64)) Line {
 	rise, run := yii-yi, xii-xi
 	m := rise / run
 
-	// When x 
+	// When x is equal to zero, we've hit the y-intercept.
+	// Lets cal
