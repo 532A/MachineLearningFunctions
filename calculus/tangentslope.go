@@ -17,3 +17,7 @@ func TangentSlope(x, d float64, f func(x float64) (y float64)) Line {
 	return Line{
 		M: m,
 		B: b,
+	}
+}
+
+// Line presents a slope intercept formula: y 
