@@ -22,4 +22,8 @@ func TangentSlope(x, d float64, f func(x float64) (y float64)) Line {
 
 // Line presents a slope intercept formula: y = mx + b
 type Line struct {
-	// M is the slope of the line
+	// M is the slope of the line.
+	M float64
+	// B is the y-intercept.
+	B float64
+}
