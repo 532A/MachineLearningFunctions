@@ -27,3 +27,6 @@ type Line struct {
 	// B is the y-intercept.
 	B float64
 }
+
+// Y calculates the Y value.
+func (l Line) Y(
