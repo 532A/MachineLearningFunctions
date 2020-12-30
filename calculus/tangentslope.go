@@ -29,4 +29,8 @@ type Line struct {
 }
 
 // Y calculates the Y value.
-func (l Line) Y(
+func (l Line) Y(x float64) float64 {
+	return (l.M * x) + l.B
+}
+
+// X ca
