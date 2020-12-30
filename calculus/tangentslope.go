@@ -33,4 +33,5 @@ func (l Line) Y(x float64) float64 {
 	return (l.M * x) + l.B
 }
 
-// X ca
+// X calculates the X value.
+func (l Line) X(y float64) floa
