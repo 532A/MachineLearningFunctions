@@ -34,4 +34,7 @@ func (l Line) Y(x float64) float64 {
 }
 
 // X calculates the X value.
-func (l Line) X(y float64) floa
+func (l Line) X(y float64) float64 {
+	// y = mx + b
+	// y - b = mx
+	/
