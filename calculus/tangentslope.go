@@ -37,4 +37,6 @@ func (l Line) Y(x float64) float64 {
 func (l Line) X(y float64) float64 {
 	// y = mx + b
 	// y - b = mx
-	/
+	// (y - b) / m = x
+	return (y - l.B) / l.M
+}
