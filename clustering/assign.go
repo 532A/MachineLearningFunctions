@@ -4,4 +4,5 @@ import (
 	"errors"
 )
 
-// Assign vectors to their cluster
+// Assign vectors to their clusters.
+func Assign(data []Vector, assignment []int) ([]Cluste
