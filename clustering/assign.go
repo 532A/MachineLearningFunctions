@@ -5,4 +5,6 @@ import (
 )
 
 // Assign vectors to their clusters.
-func Assign(data []Vector, assignment []int) ([]Cluste
+func Assign(data []Vector, assignment []int) ([]Cluster, error) {
+	if len(assignment) != len(data) {
+		
