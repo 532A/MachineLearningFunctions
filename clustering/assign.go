@@ -10,4 +10,7 @@ func Assign(data []Vector, assignment []int) ([]Cluster, error) {
 		return nil, errors.New("assignment must equal the amount of input")
 	}
 	clusters := 0
-	for _, v := range
+	for _, v := range assignment {
+		if v > clusters {
+			clusters = v
+	
