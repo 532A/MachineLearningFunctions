@@ -13,4 +13,7 @@ func Assign(data []Vector, assignment []int) ([]Cluster, error) {
 	for _, v := range assignment {
 		if v > clusters {
 			clusters = v
-	
+		}
+	}
+	op := make([]Cluster, clusters+1)
+	for i, a 
