@@ -16,4 +16,6 @@ func Assign(data []Vector, assignment []int) ([]Cluster, error) {
 		}
 	}
 	op := make([]Cluster, clusters+1)
-	for i, a 
+	for i, a := range assignment {
+		existing := op[a]
+		op[a] = append(existing, da
