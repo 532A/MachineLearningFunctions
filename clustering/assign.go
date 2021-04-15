@@ -23,4 +23,7 @@ func Assign(data []Vector, assignment []int) ([]Cluster, error) {
 	return op, nil
 }
 
-// Cluster is a slice of 
+// Cluster is a slice of vectors.
+type Cluster []Vector
+
+// Eq compares two clusters to
