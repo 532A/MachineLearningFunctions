@@ -27,4 +27,5 @@ func Assign(data []Vector, assignment []int) ([]Cluster, error) {
 type Cluster []Vector
 
 // Eq compares two clusters to determine whether they are equal.
-f
+func (c Cluster) Eq(o Cluster) bool {
+	if len(c) != len(o)
