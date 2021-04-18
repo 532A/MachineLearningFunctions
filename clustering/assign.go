@@ -28,4 +28,8 @@ type Cluster []Vector
 
 // Eq compares two clusters to determine whether they are equal.
 func (c Cluster) Eq(o Cluster) bool {
-	if len(c) != len(o)
+	if len(c) != len(o) {
+		return false
+	}
+	for i, v := range c {
+		if !o[i].
