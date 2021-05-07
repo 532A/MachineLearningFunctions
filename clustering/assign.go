@@ -39,3 +39,5 @@ func (c Cluster) Eq(o Cluster) bool {
 	return true
 }
 
+// Clusters is a slice of clusters.
+type Clust
