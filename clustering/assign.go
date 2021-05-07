@@ -40,4 +40,6 @@ func (c Cluster) Eq(o Cluster) bool {
 }
 
 // Clusters is a slice of clusters.
-type Clust
+type Clusters []Cluster
+
+// Eq compares two slices to determine
