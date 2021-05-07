@@ -43,4 +43,7 @@ func (c Cluster) Eq(o Cluster) bool {
 type Clusters []Cluster
 
 // Eq compares two slices to determine whether they are equal.
-func (c Clusters) Eq(o Clusters) 
+func (c Clusters) Eq(o Clusters) bool {
+	if len(c) != len(o) {
+		return false
+	}
