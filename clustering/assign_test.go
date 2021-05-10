@@ -79,3 +79,33 @@ func TestClusterEqual(t *testing.T) {
 			b: []Vector{
 				Vector{1, 2, 3},
 			},
+			expected: false,
+		},
+		{
+			a: []Vector{
+				Vector{1, 2, 3},
+				Vector{4, 6},
+			},
+			b: []Vector{
+				Vector{1, 2, 3},
+			},
+			expected: false,
+		},
+		{
+			a: []Vector{
+				Vector{1, 2, 3},
+			},
+			b: []Vector{
+				Vector{3, 2, 1},
+			},
+			expected: false,
+		},
+	}
+
+	for _, test := range tests {
+		actual := test.a.Eq(test.b)
+		if test.expected != actual {
+			t.Fatalf("comparing %v and %v, expected %v, got %v", test.a, test.b, test.expected, actual)
+		}
+	}
+}
