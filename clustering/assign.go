@@ -49,4 +49,8 @@ func (c Clusters) Eq(o Clusters) bool {
 	}
 	for i, v := range c {
 		if !o[i].Eq(v) {
-			return fal
+			return false
+		}
+	}
+	return true
+}
