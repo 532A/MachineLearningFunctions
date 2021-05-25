@@ -68,3 +68,11 @@ func Centroids(data []Vector, n int, assignments []int, centroids *[]Vector) (er
 	}
 
 	// Divide by the length of data to get the average.
+	for _, c := range cs {
+		for i, f := range c {
+			c[i] = f / float64(len(data))
+		}
+	}
+
+	return
+}
