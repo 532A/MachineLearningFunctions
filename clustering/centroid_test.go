@@ -2,4 +2,8 @@ package clustering
 
 import (
 	"errors"
-	"tes
+	"testing"
+)
+
+func TestCentroid(t *testing.T) {
+	tests := []struct 
