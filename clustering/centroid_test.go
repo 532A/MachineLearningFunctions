@@ -6,4 +6,7 @@ import (
 )
 
 func TestCentroid(t *testing.T) {
-	tests := []struct 
+	tests := []struct {
+		name          string
+		vectorLength  int
+		data      
