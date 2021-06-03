@@ -11,4 +11,7 @@ func TestCentroid(t *testing.T) {
 		vectorLength  int
 		data          []Vector
 		expected      Vector
-		expectedError 
+		expectedError error
+	}{
+		{
+			name:          "Emp
