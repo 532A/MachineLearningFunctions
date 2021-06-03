@@ -14,4 +14,6 @@ func TestCentroid(t *testing.T) {
 		expectedError error
 	}{
 		{
-			name:          "Emp
+			name:          "Empty",
+			vectorLength:  3,
+			data:     
