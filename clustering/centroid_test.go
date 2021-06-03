@@ -9,4 +9,6 @@ func TestCentroid(t *testing.T) {
 	tests := []struct {
 		name          string
 		vectorLength  int
-		data      
+		data          []Vector
+		expected      Vector
+		expectedError 
