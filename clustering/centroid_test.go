@@ -16,4 +16,5 @@ func TestCentroid(t *testing.T) {
 		{
 			name:          "Empty",
 			vectorLength:  3,
-			data:     
+			data:          []Vector{},
+			expected:      V
