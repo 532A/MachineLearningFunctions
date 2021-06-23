@@ -18,4 +18,7 @@ func TestCentroid(t *testing.T) {
 			vectorLength:  3,
 			data:          []Vector{},
 			expected:      Vector{0, 0, 0},
-			expectedError: errors.New("ce
+			expectedError: errors.New("centroid: no data provided"),
+		},
+		{
+			name:      
