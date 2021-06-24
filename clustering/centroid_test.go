@@ -21,4 +21,6 @@ func TestCentroid(t *testing.T) {
 			expectedError: errors.New("centroid: no data provided"),
 		},
 		{
-			name:      
+			name:         "All ones",
+			vectorLength: 3,
+			data: []Ve
