@@ -27,4 +27,7 @@ func TestCentroid(t *testing.T) {
 				Vector{1, 1, 1},
 				Vector{1, 1, 1},
 				Vector{1, 1, 1},
-			
+				Vector{1, 1, 1},
+			},
+			expected: Vector{1, 1, 1},
+		},
