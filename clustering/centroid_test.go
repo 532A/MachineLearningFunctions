@@ -33,4 +33,6 @@ func TestCentroid(t *testing.T) {
 		},
 		{
 			name:         "Average of 1 and 2 is 1.5",
-	
+			vectorLength: 3,
+			data: []Vector{
+				Vector{1, 
