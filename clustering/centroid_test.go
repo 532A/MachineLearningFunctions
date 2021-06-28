@@ -31,3 +31,6 @@ func TestCentroid(t *testing.T) {
 			},
 			expected: Vector{1, 1, 1},
 		},
+		{
+			name:         "Average of 1 and 2 is 1.5",
+	
