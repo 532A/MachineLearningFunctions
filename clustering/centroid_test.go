@@ -23,4 +23,8 @@ func TestCentroid(t *testing.T) {
 		{
 			name:         "All ones",
 			vectorLength: 3,
-			data: []Ve
+			data: []Vector{
+				Vector{1, 1, 1},
+				Vector{1, 1, 1},
+				Vector{1, 1, 1},
+			
