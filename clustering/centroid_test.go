@@ -35,4 +35,7 @@ func TestCentroid(t *testing.T) {
 			name:         "Average of 1 and 2 is 1.5",
 			vectorLength: 3,
 			data: []Vector{
-				Vector{1, 
+				Vector{1, 2, 1},
+				Vector{2, 1, 2},
+			},
+			expected: Vect
