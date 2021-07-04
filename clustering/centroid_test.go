@@ -38,4 +38,9 @@ func TestCentroid(t *testing.T) {
 				Vector{1, 2, 1},
 				Vector{2, 1, 2},
 			},
-			expected: Vect
+			expected: Vector{1.5, 1.5, 1.5},
+		},
+	}
+
+	for _, test := range tests {
+		actu
