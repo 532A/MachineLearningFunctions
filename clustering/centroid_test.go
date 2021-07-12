@@ -43,4 +43,5 @@ func TestCentroid(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actu
+		actual, err := Centroid(test.data)
+		if test.expectedError !=
