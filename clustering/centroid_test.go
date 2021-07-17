@@ -46,4 +46,7 @@ func TestCentroid(t *testing.T) {
 		actual, err := Centroid(test.data)
 		if test.expectedError != nil {
 			if err.Error() != test.expectedError.Error() {
-				t.Fatalf("%s: expected error '%v', but got '%v'", test.
+				t.Fatalf("%s: expected error '%v', but got '%v'", test.name, test.expectedError, err)
+			}
+			continue
+		}
