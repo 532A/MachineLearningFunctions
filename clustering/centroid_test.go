@@ -50,3 +50,6 @@ func TestCentroid(t *testing.T) {
 			}
 			continue
 		}
+
+		if err != nil {
+			t.Fatalf("%s: go
