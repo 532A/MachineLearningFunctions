@@ -54,4 +54,5 @@ func TestCentroid(t *testing.T) {
 		if err != nil {
 			t.Fatalf("%s: got error %v", test.name, err)
 		}
-		if !actual.E
+		if !actual.Eq(test.expected) {
+			t.Errorf("%s: expected %v, go
