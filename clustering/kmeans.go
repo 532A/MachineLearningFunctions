@@ -1,0 +1,4 @@
+package clustering
+
+import (
+	"errors"

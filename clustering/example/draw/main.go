@@ -100,3 +100,14 @@ func randomise(v []float64, min, max int) {
 }
 
 func addScatters(plt *plot.Plot, index int, name string, xyers plotter.XYs) error {
+	s, err := plotter.NewScatter(xyers)
+	if err != nil {
+		return err
+	}
+	s.Color = plotutil.Color(index)
+	s.Shape = plotutil.Shape(index)
+	plt.Add(s)
+
+	plt.Legend.Add(name)
+	return nil
+}
