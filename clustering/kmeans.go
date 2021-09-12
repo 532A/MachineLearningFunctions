@@ -9,4 +9,4 @@ import (
 )
 
 // KMeans cluster the input vectors into n clusters using the distance function d.
-func KMeans(data []Vec
+func KMeans(data []Vector, n int, d distance.Function) (assignment []int,
