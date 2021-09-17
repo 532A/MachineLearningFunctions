@@ -11,4 +11,6 @@ import (
 // KMeans cluster the input vectors into n clusters using the distance function d.
 func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err error) {
 	if n <= 0 {
-		return nil, errors.N
+		return nil, errors.New("KMeans: n cannot be less than or equal to zero")
+	}
+	if da
