@@ -13,4 +13,5 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 	if n <= 0 {
 		return nil, errors.New("KMeans: n cannot be less than or equal to zero")
 	}
-	if da
+	if data == nil {
+		return nil, errors.New("KMeans: data cannot be
