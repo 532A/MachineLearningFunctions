@@ -20,4 +20,4 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 		return nil, errors.New("KMeans: data cannot be empty")
 	}
 
-	//
+	// Assign data to random clusters, but make sure every cl
