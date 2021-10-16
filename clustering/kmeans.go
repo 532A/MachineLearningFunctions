@@ -21,4 +21,7 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 	}
 
 	// Assign data to random clusters, but make sure every cluster has something in it.
-	assignment = make([]int,
+	assignment = make([]int, len(data))
+
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	
