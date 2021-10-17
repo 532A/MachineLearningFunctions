@@ -24,4 +24,5 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 	assignment = make([]int, len(data))
 
 	r := rand.New(rand.NewSource(time.Now().Unix()))
-	
+	assigned := map[int]interface{}{}
+	for i := 0; i < n;
