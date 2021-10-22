@@ -35,4 +35,6 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 			}
 		}
 	}
-	for i := 0; i < l
+	for i := 0; i < len(data); i++ {
+		if _, ok := assigned[i]; !ok {
+			assignmen
