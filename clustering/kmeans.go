@@ -41,4 +41,5 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 		}
 	}
 
-	// Create the c
+	// Create the centroids array once.
+	centroids := make([]Vect
