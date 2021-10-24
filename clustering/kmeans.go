@@ -46,4 +46,8 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 
 	var done bool
 	for {
-		// Exit when done
+		// Exit when done processing.
+		if done {
+			break
+		}
+		// Calculate /
