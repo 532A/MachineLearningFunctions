@@ -56,4 +56,6 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 			return assignment, err
 		}
 		done = true
-		for i, v := range 
+		for i, v := range data {
+			currentAssignmentIndex := assignment[i]
+			newAss
