@@ -53,4 +53,7 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 		// Calculate / recalculate centroids.
 		err = Centroids(data, n, assignment, &centroids)
 		if err != nil {
-			return assignme
+			return assignment, err
+		}
+		done = true
+		for i, v := range 
