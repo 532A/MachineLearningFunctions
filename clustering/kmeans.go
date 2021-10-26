@@ -58,4 +58,4 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 		done = true
 		for i, v := range data {
 			currentAssignmentIndex := assignment[i]
-			newAss
+			newAssignmentIndex, err := findNearest(&v, &centroid
