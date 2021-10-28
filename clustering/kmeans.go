@@ -62,4 +62,5 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 			if err != nil {
 				return assignment, err
 			}
-			if currentAssignmentIndex != newA
+			if currentAssignmentIndex != newAssignmentIndex {
+				assignmen
