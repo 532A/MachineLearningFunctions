@@ -68,4 +68,7 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 			}
 		}
 	}
-	r
+	return assignment, err
+}
+
+func findNearest(v *Vector, ce
