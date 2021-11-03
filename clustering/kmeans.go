@@ -71,4 +71,4 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 	return assignment, err
 }
 
-func findNearest(v *Vector, ce
+func findNearest(v *Vector, centroids *[]Vector, d distance.Function) (n int, e
