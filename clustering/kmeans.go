@@ -72,4 +72,5 @@ func KMeans(data []Vector, n int, d distance.Function) (assignment []int, err er
 }
 
 func findNearest(v *Vector, centroids *[]Vector, d distance.Function) (n int, err error) {
-	if centroids == nil || len(*centr
+	if centroids == nil || len(*centroids) == 0 {
+		err = errors.New("KMeans: no centroi
