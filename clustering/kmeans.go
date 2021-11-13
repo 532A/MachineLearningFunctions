@@ -78,4 +78,5 @@ func findNearest(v *Vector, centroids *[]Vector, d distance.Function) (n int, er
 	}
 	cs := *centroids
 
-	// Calculate 
+	// Calculate the first distance as a starting point.
+	nd, err := d(*v, 
