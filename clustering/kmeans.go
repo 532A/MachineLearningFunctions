@@ -91,4 +91,6 @@ func findNearest(v *Vector, centroids *[]Vector, d distance.Function) (n int, er
 		if err != nil {
 			return
 		}
-		if cd < nd 
+		if cd < nd {
+			nd = cd
+			n = i + start // We started from
