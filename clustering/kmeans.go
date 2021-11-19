@@ -87,4 +87,8 @@ func findNearest(v *Vector, centroids *[]Vector, d distance.Function) (n int, er
 	start := 1
 	for i, centroid := range cs[start:] {
 		var cd float64
-		cd, err = d(*v, c
+		cd, err = d(*v, centroid)
+		if err != nil {
+			return
+		}
+		if cd < nd 
