@@ -4,4 +4,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"git
+	"github.com/a-h/ml/distance"
+)
+
+func TestKMeans(t *testing.T) {
