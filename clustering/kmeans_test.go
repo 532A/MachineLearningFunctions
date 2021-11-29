@@ -8,3 +8,7 @@ import (
 )
 
 func TestKMeans(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []Vector
+		n  
