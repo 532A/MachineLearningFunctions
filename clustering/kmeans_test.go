@@ -14,4 +14,8 @@ func TestKMeans(t *testing.T) {
 		n     int
 		// Each array holds the expected contents of a cluster.
 		// For example, expected {0, 1} means that input values
-		// input[0] and input[1] should be pres
+		// input[0] and input[1] should be present together in a
+		// cluster.
+		expected [][]int
+	}{
+		
