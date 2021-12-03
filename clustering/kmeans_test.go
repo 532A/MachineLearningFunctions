@@ -18,4 +18,6 @@ func TestKMeans(t *testing.T) {
 		// cluster.
 		expected [][]int
 	}{
-		
+		{
+			name: "Single output",
+			input: []Vec
