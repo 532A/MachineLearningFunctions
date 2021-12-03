@@ -20,4 +20,8 @@ func TestKMeans(t *testing.T) {
 	}{
 		{
 			name: "Single output",
-			input: []Vec
+			input: []Vector{
+				{0, 0, 0},
+				{1, 1, 1},
+			},
+			n: 1,
