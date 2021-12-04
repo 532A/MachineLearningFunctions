@@ -25,3 +25,9 @@ func TestKMeans(t *testing.T) {
 				{1, 1, 1},
 			},
 			n: 1,
+			expected: [][]int{
+				{0, 1},
+			},
+		},
+		{
+			name
