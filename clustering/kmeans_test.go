@@ -30,4 +30,6 @@ func TestKMeans(t *testing.T) {
 			},
 		},
 		{
-			name
+			name: "Two inputs, two outputs",
+			input: []Vector{
+			
