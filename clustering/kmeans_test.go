@@ -41,4 +41,6 @@ func TestKMeans(t *testing.T) {
 				{1},
 			},
 		},
-		
+		{
+			name: "Left vs Right",
+			input: []Vect
