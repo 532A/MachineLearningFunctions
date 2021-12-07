@@ -47,4 +47,8 @@ func TestKMeans(t *testing.T) {
 				{-12, 0},
 				{-16, 0},
 				{12, 0},
-				{16, 0}
+				{16, 0},
+			},
+			n: 2,
+			expected: [][]int{
+				{0, 1
