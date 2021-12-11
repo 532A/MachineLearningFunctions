@@ -51,4 +51,10 @@ func TestKMeans(t *testing.T) {
 			},
 			n: 2,
 			expected: [][]int{
-				{0, 1
+				{0, 1},
+				{2, 3},
+			},
+		},
+		{
+			name: "Up vs Down",
+			i
