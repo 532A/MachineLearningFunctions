@@ -60,4 +60,8 @@ func TestKMeans(t *testing.T) {
 			input: []Vector{
 				{3, -100},
 				{40, -200},
-				{
+				{16, 100},
+				{10, 200},
+			},
+			n: 2,
+			expected: [][]i
