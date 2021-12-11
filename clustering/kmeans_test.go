@@ -57,4 +57,7 @@ func TestKMeans(t *testing.T) {
 		},
 		{
 			name: "Up vs Down",
-			i
+			input: []Vector{
+				{3, -100},
+				{40, -200},
+				{
