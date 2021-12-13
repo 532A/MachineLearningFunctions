@@ -71,4 +71,5 @@ func TestKMeans(t *testing.T) {
 		},
 	}
 
-	for _, 
+	for _, test := range tests {
+		assignment, err :=
