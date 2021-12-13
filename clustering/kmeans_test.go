@@ -72,4 +72,4 @@ func TestKMeans(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		assignment, err :=
+		assignment, err := KMeans(test.input, test.n, distance.Euclidean)
