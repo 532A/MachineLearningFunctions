@@ -73,3 +73,5 @@ func TestKMeans(t *testing.T) {
 
 	for _, test := range tests {
 		assignment, err := KMeans(test.input, test.n, distance.Euclidean)
+		if err != nil {
+			t.Fatalf("%s: u
