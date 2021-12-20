@@ -76,4 +76,5 @@ func TestKMeans(t *testing.T) {
 		if err != nil {
 			t.Fatalf("%s: unexpected error: %v", test.name, err)
 		}
-		if len(assignment) != len(test.in
+		if len(assignment) != len(test.input) {
+			t.Errorf("%s: expected assignment length %d
