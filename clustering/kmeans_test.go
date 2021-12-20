@@ -75,4 +75,5 @@ func TestKMeans(t *testing.T) {
 		assignment, err := KMeans(test.input, test.n, distance.Euclidean)
 		if err != nil {
 			t.Fatalf("%s: unexpected error: %v", test.name, err)
-	
+		}
+		if len(assignment) != len(test.in
