@@ -81,4 +81,5 @@ func TestKMeans(t *testing.T) {
 		}
 
 		// Clusters are assigned randomly and may be in any order.
-		allActualCluste
+		allActualClusters := getClusters(test.input, assignment)
+
