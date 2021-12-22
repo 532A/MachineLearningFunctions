@@ -80,4 +80,5 @@ func TestKMeans(t *testing.T) {
 			t.Errorf("%s: expected assignment length %d to equal the amount of data %d", test.name, len(assignment), len(test.input))
 		}
 
-		// Clusters are assigne
+		// Clusters are assigned randomly and may be in any order.
+		allActualCluste
