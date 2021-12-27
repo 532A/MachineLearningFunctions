@@ -84,4 +84,6 @@ func TestKMeans(t *testing.T) {
 		allActualClusters := getClusters(test.input, assignment)
 
 		for _, expectedCluster := range test.expected {
-			// Find the first cluster that contains the expected item. The rest of the i
+			// Find the first cluster that contains the expected item. The rest of the items should also be
+			// there.
+			firstExpected := 
