@@ -89,4 +89,7 @@ func TestKMeans(t *testing.T) {
 			firstExpected := test.input[expectedCluster[0]]
 
 			var allOthersShouldBeFoundIn int
-			for i, a := range allActualClusters 
+			for i, a := range allActualClusters {
+			out:
+				for _, vv := range a {
+					if firstE
