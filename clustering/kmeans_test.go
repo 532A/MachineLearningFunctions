@@ -92,4 +92,5 @@ func TestKMeans(t *testing.T) {
 			for i, a := range allActualClusters {
 			out:
 				for _, vv := range a {
-					if firstE
+					if firstExpected.Eq(vv) {
+						allOthersShouldBeFou
