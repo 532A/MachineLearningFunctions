@@ -99,4 +99,4 @@ func TestKMeans(t *testing.T) {
 				}
 			}
 
-			//
+			// Get each expected vector in the cluster, 
