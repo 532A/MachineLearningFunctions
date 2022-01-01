@@ -93,4 +93,10 @@ func TestKMeans(t *testing.T) {
 			out:
 				for _, vv := range a {
 					if firstExpected.Eq(vv) {
-						allOthersShouldBeFou
+						allOthersShouldBeFoundIn = i
+						break out
+					}
+				}
+			}
+
+			//
