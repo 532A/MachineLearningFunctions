@@ -101,4 +101,5 @@ func TestKMeans(t *testing.T) {
 
 			// Get each expected vector in the cluster, and check that it's present in the
 			// same cluster as the first match.
-			actualCluster := allActualClusters[allOt
+			actualCluster := allActualClusters[allOthersShouldBeFoundIn]
+			for _, expectedToContainIndex := r
