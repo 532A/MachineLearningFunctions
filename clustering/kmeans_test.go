@@ -103,4 +103,6 @@ func TestKMeans(t *testing.T) {
 			// same cluster as the first match.
 			actualCluster := allActualClusters[allOthersShouldBeFoundIn]
 			for _, expectedToContainIndex := range expectedCluster {
-				expected := test.input[expec
+				expected := test.input[expectedToContainIndex]
+				var found bool
+				for _, v := r
