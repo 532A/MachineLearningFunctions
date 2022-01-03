@@ -105,4 +105,5 @@ func TestKMeans(t *testing.T) {
 			for _, expectedToContainIndex := range expectedCluster {
 				expected := test.input[expectedToContainIndex]
 				var found bool
-				for _, v := r
+				for _, v := range actualCluster {
+					if expected.Eq(v) {
