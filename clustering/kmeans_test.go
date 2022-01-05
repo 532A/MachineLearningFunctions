@@ -107,3 +107,8 @@ func TestKMeans(t *testing.T) {
 				var found bool
 				for _, v := range actualCluster {
 					if expected.Eq(v) {
+						found = true
+					}
+				}
+				if !found {
+					t.Er
