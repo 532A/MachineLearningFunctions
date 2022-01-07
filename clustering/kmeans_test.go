@@ -119,4 +119,5 @@ func TestKMeans(t *testing.T) {
 	}
 }
 
-func getClusters(data []
+func getClusters(data []Vector, assignment []int) map[int][]Vector {
+	op :
