@@ -111,4 +111,5 @@ func TestKMeans(t *testing.T) {
 					}
 				}
 				if !found {
-					t.Errorf("%s: expected cluster to contain indices %v, but it contained %v"
+					t.Errorf("%s: expected cluster to contain indices %v, but it contained %v", test.name,
+						expectedCluster, actualCluste
