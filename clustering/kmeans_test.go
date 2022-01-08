@@ -122,4 +122,9 @@ func TestKMeans(t *testing.T) {
 func getClusters(data []Vector, assignment []int) map[int][]Vector {
 	op := map[int][]Vector{}
 	for i, a := range assignment {
-		op[a] = append
+		op[a] = append(op[a], data[i])
+	}
+	return op
+}
+
+func TestFindNearest(t *
