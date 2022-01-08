@@ -120,4 +120,6 @@ func TestKMeans(t *testing.T) {
 }
 
 func getClusters(data []Vector, assignment []int) map[int][]Vector {
-	op :
+	op := map[int][]Vector{}
+	for i, a := range assignment {
+		op[a] = append
