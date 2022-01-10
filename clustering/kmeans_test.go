@@ -129,4 +129,6 @@ func getClusters(data []Vector, assignment []int) map[int][]Vector {
 
 func TestFindNearest(t *testing.T) {
 	tests := []struct {
-		name      s
+		name      string
+		input     Vector
+		centroids []Vec
