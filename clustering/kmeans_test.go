@@ -131,4 +131,9 @@ func TestFindNearest(t *testing.T) {
 	tests := []struct {
 		name      string
 		input     Vector
-		centroids []Vec
+		centroids []Vector
+		expected  Vector
+	}{
+		{
+			name:  "A",
+			
