@@ -141,3 +141,7 @@ func TestFindNearest(t *testing.T) {
 				Vector{1, 1, 1},
 			},
 			expected: Vector{1, 1, 1},
+		},
+		{
+			name:  "B",
+			input: Vector{1, 1, 1
