@@ -147,4 +147,6 @@ func TestFindNearest(t *testing.T) {
 			input: Vector{1, 1, 1},
 			centroids: []Vector{
 				Vector{1, 1, 1},
-				Vector{0
+				Vector{0, 0, 0},
+			},
+			expected: Vector{1
