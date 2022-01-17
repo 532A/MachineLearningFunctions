@@ -154,4 +154,6 @@ func TestFindNearest(t *testing.T) {
 		{
 			name:  "closest to 1, 1, 1",
 			input: Vector{-1, -12, -100},
-			centroids:
+			centroids: []Vector{
+				Vector{3, 7, 9},
+				Vector{1, 1, 
