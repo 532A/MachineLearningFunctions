@@ -162,4 +162,7 @@ func TestFindNearest(t *testing.T) {
 		},
 		{
 			name:  "mostly close",
-			input: Vector{3, 7,
+			input: Vector{3, 7, 3},
+			centroids: []Vector{
+				Vector{12, 1, 1},
+				Vector{3, 7, 
