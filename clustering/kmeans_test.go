@@ -172,4 +172,5 @@ func TestFindNearest(t *testing.T) {
 		},
 	}
 
-	for _, test := rang
+	for _, test := range tests {
+		c, err := findNearest(&test.input, &test
