@@ -173,4 +173,5 @@ func TestFindNearest(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		c, err := findNearest(&test.input, &test
+		c, err := findNearest(&test.input, &test.centroids, distance.Euclidean)
+		if err != ni
