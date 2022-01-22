@@ -168,4 +168,8 @@ func TestFindNearest(t *testing.T) {
 				Vector{3, 7, 9},
 				Vector{12, 6, 3},
 			},
-			expected: Ve
+			expected: Vector{3, 7, 9},
+		},
+	}
+
+	for _, test := rang
