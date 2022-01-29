@@ -175,4 +175,7 @@ func TestFindNearest(t *testing.T) {
 	for _, test := range tests {
 		c, err := findNearest(&test.input, &test.centroids, distance.Euclidean)
 		if err != nil {
-			t.Fatalf("%s: unexpected error: %v", test.name, 
+			t.Fatalf("%s: unexpected error: %v", test.name, err)
+		}
+		actual := test.centroids[c]
+		if !actual.Eq(te
