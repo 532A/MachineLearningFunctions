@@ -179,4 +179,9 @@ func TestFindNearest(t *testing.T) {
 		}
 		actual := test.centroids[c]
 		if !actual.Eq(test.expected) {
-			t.Fatalf("%s: expected nearest cluster to have centroid %v, but got %v", tes
+			t.Fatalf("%s: expected nearest cluster to have centroid %v, but got %v", test.name, test.expected, actual)
+		}
+	}
+}
+
+func BenchmarkKMeans(b
