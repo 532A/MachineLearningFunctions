@@ -178,4 +178,5 @@ func TestFindNearest(t *testing.T) {
 			t.Fatalf("%s: unexpected error: %v", test.name, err)
 		}
 		actual := test.centroids[c]
-		if !actual.Eq(te
+		if !actual.Eq(test.expected) {
+			t.Fatalf("%s: expected nearest cluste
