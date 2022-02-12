@@ -184,4 +184,5 @@ func TestFindNearest(t *testing.T) {
 	}
 }
 
-func BenchmarkKMeans(b
+func BenchmarkKMeans(b *testing.B) {
+	var data = generateDat
