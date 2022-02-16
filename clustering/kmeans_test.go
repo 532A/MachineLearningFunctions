@@ -185,4 +185,6 @@ func TestFindNearest(t *testing.T) {
 }
 
 func BenchmarkKMeans(b *testing.B) {
-	var data = generateDat
+	var data = generateData(100, 10000)
+	b.ReportAllocs()
+	b.ResetTime
