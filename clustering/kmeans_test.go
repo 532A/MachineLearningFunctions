@@ -189,4 +189,8 @@ func BenchmarkKMeans(b *testing.B) {
 	b.ReportAllocs()
 	b.ResetTimer()
 	for n := 0; n < b.N; n++ {
-		KMeans(data, 100, distan
+		KMeans(data, 100, distance.Euclidean)
+	}
+}
+
+func generateData(vectorLength, 
