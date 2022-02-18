@@ -193,4 +193,6 @@ func BenchmarkKMeans(b *testing.B) {
 	}
 }
 
-func generateData(vectorLength, 
+func generateData(vectorLength, quantity int) (rv []Vector) {
+	rv = make([]Vector, quantity)
+	f
