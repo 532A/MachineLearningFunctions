@@ -195,4 +195,5 @@ func BenchmarkKMeans(b *testing.B) {
 
 func generateData(vectorLength, quantity int) (rv []Vector) {
 	rv = make([]Vector, quantity)
-	f
+	for i := 0; i < quantity; i++ {
+		itm := make([]float64,
