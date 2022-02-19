@@ -197,4 +197,7 @@ func generateData(vectorLength, quantity int) (rv []Vector) {
 	rv = make([]Vector, quantity)
 	for i := 0; i < quantity; i++ {
 		itm := make([]float64, vectorLength)
-		for j := 0; j < vectorLength; j
+		for j := 0; j < vectorLength; j++ {
+			itm[j] = rand.Float64()
+		}
+		rv[i] = Ve
