@@ -1,3 +1,3 @@
 package clustering
 
-// Vector i
+// Vector is an array of numbers and its associated length.
