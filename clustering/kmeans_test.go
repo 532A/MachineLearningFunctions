@@ -200,4 +200,7 @@ func generateData(vectorLength, quantity int) (rv []Vector) {
 		for j := 0; j < vectorLength; j++ {
 			itm[j] = rand.Float64()
 		}
-		rv[i] = Ve
+		rv[i] = Vector(itm)
+	}
+	return
+}
