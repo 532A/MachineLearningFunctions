@@ -5,4 +5,8 @@ type Vector []float64
 
 // Eq compares two arrays.
 func (v1 Vector) Eq(v2 Vector) bool {
-	if len(v1) != len
+	if len(v1) != len(v2) {
+		return false
+	}
+
+	for i, v1i := range v1 {
