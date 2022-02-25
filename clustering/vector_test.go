@@ -1,3 +1,5 @@
 package clustering
 
-import "te
+import "testing"
+
+func TestVectorEqual(t *testing.T)
