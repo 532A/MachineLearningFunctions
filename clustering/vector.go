@@ -12,3 +12,8 @@ func (v1 Vector) Eq(v2 Vector) bool {
 	for i, v1i := range v1 {
 		if v1i != v2[i] {
 			return false
+		}
+	}
+
+	return true
+}
