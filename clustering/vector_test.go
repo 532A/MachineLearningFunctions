@@ -5,4 +5,6 @@ import "testing"
 func TestVectorEqual(t *testing.T) {
 	tests := []struct {
 		name     string
-		a   
+		a        Vector
+		b        Vector
+		expected bo
