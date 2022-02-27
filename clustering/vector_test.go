@@ -7,4 +7,8 @@ func TestVectorEqual(t *testing.T) {
 		name     string
 		a        Vector
 		b        Vector
-		expected bo
+		expected bool
+	}{
+		{
+			name:     "All ones",
+			a:        Vector{1, 1, 1},
