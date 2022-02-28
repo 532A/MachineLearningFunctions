@@ -12,3 +12,7 @@ func TestVectorEqual(t *testing.T) {
 		{
 			name:     "All ones",
 			a:        Vector{1, 1, 1},
+			b:        Vector{1, 1, 1},
+			expected: true,
+		},
+	
