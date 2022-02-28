@@ -15,4 +15,6 @@ func TestVectorEqual(t *testing.T) {
 			b:        Vector{1, 1, 1},
 			expected: true,
 		},
-	
+		{
+			name:     "Completely different",
+			a:        Vec
