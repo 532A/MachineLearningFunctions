@@ -29,4 +29,6 @@ func TestVectorEqual(t *testing.T) {
 		},
 	}
 
-	for _, tes
+	for _, test := range tests {
+		actual := test.a.Eq(test.b)
+		if a
