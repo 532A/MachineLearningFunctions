@@ -24,4 +24,9 @@ func TestVectorEqual(t *testing.T) {
 		{
 			name:     "Different lengths",
 			a:        Vector{1},
-			b:        Vector{2, 
+			b:        Vector{2, 3, 4},
+			expected: false,
+		},
+	}
+
+	for _, tes
