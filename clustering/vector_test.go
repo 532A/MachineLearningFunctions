@@ -31,4 +31,5 @@ func TestVectorEqual(t *testing.T) {
 
 	for _, test := range tests {
 		actual := test.a.Eq(test.b)
-		if a
+		if actual != test.expected {
+			t.Errorf("%s: expected %v, go
