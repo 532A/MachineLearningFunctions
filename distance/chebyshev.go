@@ -1,0 +1,6 @@
+
+package distance
+
+import (
+	"math"
+)
