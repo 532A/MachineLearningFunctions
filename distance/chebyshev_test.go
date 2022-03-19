@@ -7,4 +7,7 @@ func TestChebyshev(t *testing.T) {
 		name     string
 		p        []float64
 		q        []float64
-		expected fl
+		expected float64
+	}{
+		{
+			name:     "Pythagoran triangle from or
