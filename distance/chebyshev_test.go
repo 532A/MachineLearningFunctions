@@ -4,4 +4,7 @@ import "testing"
 
 func TestChebyshev(t *testing.T) {
 	tests := []struct {
-		name   
+		name     string
+		p        []float64
+		q        []float64
+		expected fl
