@@ -2,4 +2,6 @@ package distance
 
 import "testing"
 
-fu
+func TestChebyshev(t *testing.T) {
+	tests := []struct {
+		name   
