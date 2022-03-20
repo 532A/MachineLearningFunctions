@@ -10,4 +10,6 @@ func TestChebyshev(t *testing.T) {
 		expected float64
 	}{
 		{
-			name:     "Pythagoran triangle from or
+			name:     "Pythagoran triangle from origin",
+			p:        []float64{0, 0},
+			q:        []flo
