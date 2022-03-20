@@ -12,4 +12,8 @@ func TestChebyshev(t *testing.T) {
 		{
 			name:     "Pythagoran triangle from origin",
 			p:        []float64{0, 0},
-			q:        []flo
+			q:        []float64{4, 3},
+			expected: 4,
+		},
+		{
+			name:     "Lar
