@@ -29,4 +29,5 @@ func TestChebyshev(t *testing.T) {
 		},
 	}
 
-	for _, test :
+	for _, test := range tests {
+		actual, err := Chebyshev(test.p, test
