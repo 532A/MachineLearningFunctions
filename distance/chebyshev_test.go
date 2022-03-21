@@ -22,4 +22,6 @@ func TestChebyshev(t *testing.T) {
 			expected: 16,
 		},
 		{
-			name:     
+			name:     "Larger Y",
+			p:        []float64{0, -32},
+			q:        []
