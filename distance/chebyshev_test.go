@@ -30,4 +30,6 @@ func TestChebyshev(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual, err := Chebyshev(test.p, test
+		actual, err := Chebyshev(test.p, test.q)
+		if err != nil {
+			t.Fatalf("%s: %v"
