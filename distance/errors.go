@@ -1,1 +1,7 @@
-pac
+package distance
+
+import (
+	"errors"
+)
+
+// ErrMisma
