@@ -4,4 +4,4 @@ import (
 	"errors"
 )
 
-// ErrMisma
+// ErrMismatchedVectorLengths is an error for when an operation ca
