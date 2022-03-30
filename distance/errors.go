@@ -8,4 +8,5 @@ import (
 // of vectors being used, e.g. 2 vectors, one with length 2 and the other of length 3 cannot be compared.
 var ErrMismatchedVectorLengths = errors.New("distance: mismatched vector lengths")
 
-// ErrZeroLengthVector is an error for when an input has a zero length vector - i.e. there is n
+// ErrZeroLengthVector is an error for when an input has a zero length vector - i.e. there is nothing to compare.
+var ErrZeroLengthVector = errors
