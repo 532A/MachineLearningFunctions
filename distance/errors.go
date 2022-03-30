@@ -9,4 +9,4 @@ import (
 var ErrMismatchedVectorLengths = errors.New("distance: mismatched vector lengths")
 
 // ErrZeroLengthVector is an error for when an input has a zero length vector - i.e. there is nothing to compare.
-var ErrZeroLengthVector = errors
+var ErrZeroLengthVector = errors.New("distance: zero length 
