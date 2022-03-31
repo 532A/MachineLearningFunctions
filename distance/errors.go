@@ -12,4 +12,6 @@ var ErrMismatchedVectorLengths = errors.New("distance: mismatched vector lengths
 var ErrZeroLengthVector = errors.New("distance: zero length vector")
 
 // ErrNilVector is an error for when an input has a zero length vector - i.e. there is nothing to compare.
-var ErrNilVec
+var ErrNilVector = errors.New("distance: nil vector")
+
+func validat
