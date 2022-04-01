@@ -15,4 +15,7 @@ var ErrZeroLengthVector = errors.New("distance: zero length vector")
 var ErrNilVector = errors.New("distance: nil vector")
 
 func validateInputs(p, q []float64) error {
-	if p == nil || 
+	if p == nil || q == nil {
+		return ErrNilVector
+	}
+	if len(p) !=
