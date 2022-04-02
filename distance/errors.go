@@ -18,4 +18,5 @@ func validateInputs(p, q []float64) error {
 	if p == nil || q == nil {
 		return ErrNilVector
 	}
-	if len(p) !=
+	if len(p) != len(q) {
+		return ErrMismatchedVectorLen
