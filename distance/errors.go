@@ -22,4 +22,7 @@ func validateInputs(p, q []float64) error {
 		return ErrMismatchedVectorLengths
 	}
 	if len(p) == 0 || len(q) == 0 {
-		return ErrZ
+		return ErrZeroLengthVector
+	}
+	return nil
+}
