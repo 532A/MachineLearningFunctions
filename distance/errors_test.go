@@ -1,3 +1,5 @@
 package distance
 
-import
+import "testing"
+
+func TestErrors(t *testing.T) 
