@@ -10,4 +10,5 @@ func TestErrors(t *testing.T) {
 		expected error
 	}{
 		{
-			
+			name:     "Zero length vectors",
+			p:        []float64{},
