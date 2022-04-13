@@ -19,4 +19,7 @@ func TestErrors(t *testing.T) {
 			name:     "Mismatched lengths",
 			p:        []float64{-1},
 			q:        []float64{3, 3},
-			expected: 
+			expected: ErrMismatchedVectorLengths,
+		},
+		{
+			name:
