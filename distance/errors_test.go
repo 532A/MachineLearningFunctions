@@ -25,4 +25,7 @@ func TestErrors(t *testing.T) {
 			name:     "Nil input p",
 			p:        nil,
 			q:        []float64{3, 3},
-			expected:
+			expected: ErrNilVector,
+		},
+		{
+			name:     "Nil inp
