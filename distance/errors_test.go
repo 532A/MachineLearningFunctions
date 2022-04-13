@@ -24,4 +24,5 @@ func TestErrors(t *testing.T) {
 		{
 			name:     "Nil input p",
 			p:        nil,
-			q: 
+			q:        []float64{3, 3},
+			expected:
