@@ -22,4 +22,6 @@ func TestErrors(t *testing.T) {
 			expected: ErrMismatchedVectorLengths,
 		},
 		{
-			name:
+			name:     "Nil input p",
+			p:        nil,
+			q: 
