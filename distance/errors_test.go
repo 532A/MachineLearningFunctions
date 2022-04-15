@@ -28,4 +28,6 @@ func TestErrors(t *testing.T) {
 			expected: ErrNilVector,
 		},
 		{
-			name:     "Nil inp
+			name:     "Nil input q",
+			p:        []float64{-1},
+			q:      
