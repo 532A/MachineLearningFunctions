@@ -36,4 +36,5 @@ func TestErrors(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		testFunction("Chebyshev", func() (d floa
+		testFunction("Chebyshev", func() (d float64, err error) {
+			return Chebyshev(test.p, test.q)
