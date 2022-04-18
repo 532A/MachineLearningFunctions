@@ -38,3 +38,5 @@ func TestErrors(t *testing.T) {
 	for _, test := range tests {
 		testFunction("Chebyshev", func() (d float64, err error) {
 			return Chebyshev(test.p, test.q)
+		}, test.expected, t)
+		testFunction("Euclidean", func() (d float
