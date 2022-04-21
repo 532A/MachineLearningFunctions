@@ -42,4 +42,5 @@ func TestErrors(t *testing.T) {
 		testFunction("Euclidean", func() (d float64, err error) {
 			return Euclidean(test.p, test.q)
 		}, test.expected, t)
-		testFunction("Manh
+		testFunction("Manhattan", func() (d float64, err error) {
+			return Manha
