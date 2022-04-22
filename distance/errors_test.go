@@ -47,4 +47,5 @@ func TestErrors(t *testing.T) {
 		}, test.expected, t)
 		testFunction("SumOfSquares", func() (d float64, err error) {
 			return SumOfSquares(test.p, test.q)
-		
+		}, test.expected, t)
+		testFunction("RootMeanSquare
