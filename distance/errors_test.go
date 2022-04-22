@@ -45,4 +45,5 @@ func TestErrors(t *testing.T) {
 		testFunction("Manhattan", func() (d float64, err error) {
 			return Manhattan(test.p, test.q)
 		}, test.expected, t)
-		testF
+		testFunction("SumOfSquares", func() (d float64, err error) {
+			
