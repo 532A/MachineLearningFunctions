@@ -50,4 +50,8 @@ func TestErrors(t *testing.T) {
 		}, test.expected, t)
 		testFunction("RootMeanSquare", func() (d float64, err error) {
 			return RootMeanSquare(test.p, test.q)
-		}, test.expected
+		}, test.expected, t)
+	}
+}
+
+func testFunction(name string, function func
