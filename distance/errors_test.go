@@ -54,4 +54,4 @@ func TestErrors(t *testing.T) {
 	}
 }
 
-func testFunction(name string, function func
+func testFunction(name string, function func() (d float64, err error), expected error, t *testing.T
