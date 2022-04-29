@@ -59,4 +59,5 @@ func testFunction(name string, function func() (d float64, err error), expected 
 	if actual == nil {
 		t.Errorf("%s: expected %v, but got nil", name, expected)
 	}
-	
+	if actual != expected {
+		t.Errorf("%s: expec
