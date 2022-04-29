@@ -57,4 +57,6 @@ func TestErrors(t *testing.T) {
 func testFunction(name string, function func() (d float64, err error), expected error, t *testing.T) {
 	_, actual := function()
 	if actual == nil {
-		t.Errorf(
+		t.Errorf("%s: expected %v, but got nil", name, expected)
+	}
+	
