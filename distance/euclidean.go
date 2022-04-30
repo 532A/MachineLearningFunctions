@@ -4,4 +4,5 @@ import (
 	"math"
 )
 
-// Eu
+// Euclidean distance between two vectors.
+func Euclidean(p []
