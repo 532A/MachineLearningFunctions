@@ -8,3 +8,6 @@ import (
 func Euclidean(p []float64, q []float64) (d float64, err error) {
 	if err = validateInputs(p, q); err != nil {
 		return
+	}
+	for i, pi := range p {
+		d += (pi - q[i]) *
