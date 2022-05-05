@@ -7,4 +7,7 @@ func TestEuclidean(t *testing.T) {
 		name     string
 		p        []float64
 		q        []float64
-		exp
+		expected float64
+	}{
+		{
+			name:     
