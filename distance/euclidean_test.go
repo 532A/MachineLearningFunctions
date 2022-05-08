@@ -13,4 +13,7 @@ func TestEuclidean(t *testing.T) {
 			name:     "Pythagoran triangle from origin",
 			p:        []float64{0, 0},
 			q:        []float64{4, 3},
-			expec
+			expected: 5,
+		},
+		{
+			name:     "Pythagoran triangl
