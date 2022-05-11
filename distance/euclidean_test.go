@@ -22,4 +22,4 @@ func TestEuclidean(t *testing.T) {
 			expected: 5,
 		},
 		{
-		
+			name:     "Pythagoran triangle shifted r
