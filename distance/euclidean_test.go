@@ -24,4 +24,8 @@ func TestEuclidean(t *testing.T) {
 		{
 			name:     "Pythagoran triangle shifted right",
 			p:        []float64{1, 0},
-			q:        []float64{5,
+			q:        []float64{5, 3},
+			expected: 5,
+		},
+		{
+			name:     "Pythagoran t
