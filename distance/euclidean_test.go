@@ -36,3 +36,6 @@ func TestEuclidean(t *testing.T) {
 		{
 			name:     "Single value",
 			p:        []float64{1.0},
+			q:        []float64{1.0},
+			expected: 0.0,
+		}
