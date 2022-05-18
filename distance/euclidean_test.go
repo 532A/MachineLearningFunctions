@@ -46,4 +46,5 @@ func TestEuclidean(t *testing.T) {
 		if err != nil {
 			t.Fatalf("%s: %v", test.name, err)
 		}
-		if actual != 
+		if actual != test.expected {
+			t.Errorf("%s: for input %v and
