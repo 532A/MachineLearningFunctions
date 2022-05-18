@@ -42,4 +42,6 @@ func TestEuclidean(t *testing.T) {
 	}
 
 	for _, test := range tests {
-	
+		actual, err := Euclidean(test.p, test.q)
+		if err != nil {
+			
