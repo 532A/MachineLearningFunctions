@@ -44,4 +44,6 @@ func TestEuclidean(t *testing.T) {
 	for _, test := range tests {
 		actual, err := Euclidean(test.p, test.q)
 		if err != nil {
-			
+			t.Fatalf("%s: %v", test.name, err)
+		}
+		if actual != 
