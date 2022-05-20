@@ -48,4 +48,5 @@ func TestEuclidean(t *testing.T) {
 		}
 		if actual != test.expected {
 			t.Errorf("%s: for input %v and %v, expected %v, but got %v",
-				t
+				test.name, test.p, test.q, test.expected, actual)
+		
