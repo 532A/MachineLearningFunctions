@@ -7,4 +7,7 @@ func TestManhattan(t *testing.T) {
 		name     string
 		p        []float64
 		q        []float64
-		expected 
+		expected float64
+	}{
+		{
+			name:     "Pythagoran triangle from origi
