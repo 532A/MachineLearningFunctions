@@ -10,4 +10,6 @@ func TestManhattan(t *testing.T) {
 		expected float64
 	}{
 		{
-			name:     "Pythagoran triangle from origi
+			name:     "Pythagoran triangle from origin",
+			p:        []float64{0, 0},
+			q:        []f
