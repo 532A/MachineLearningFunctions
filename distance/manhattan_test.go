@@ -14,3 +14,6 @@ func TestManhattan(t *testing.T) {
 			p:        []float64{0, 0},
 			q:        []float64{4, 3},
 			expected: (4 - 0) + (3 - 0),
+		},
+		{
+			name:     "Pythagoran tria
