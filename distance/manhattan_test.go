@@ -18,4 +18,8 @@ func TestManhattan(t *testing.T) {
 		{
 			name:     "Pythagoran triangle 2",
 			p:        []float64{4, 3},
-			q:       
+			q:        []float64{0, 0},
+			expected: 4 + 3,
+		},
+		{
+			na
