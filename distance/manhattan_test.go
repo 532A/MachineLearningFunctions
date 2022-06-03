@@ -23,4 +23,6 @@ func TestManhattan(t *testing.T) {
 		},
 		{
 			name:     "Equal values",
-			p:        []float64{-1, 6
+			p:        []float64{-1, 6},
+			q:        []float64{-1, 6},
+			expected: 0
