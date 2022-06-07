@@ -31,4 +31,8 @@ func TestManhattan(t *testing.T) {
 			name:     "Negative values",
 			p:        []float64{-5, -100},
 			q:        []float64{-1, -90},
-			expecte
+			expected: 4 + 10,
+		},
+	}
+
+	for _, test := range tests {
