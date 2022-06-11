@@ -36,4 +36,7 @@ func TestManhattan(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual, err := Manhattan(test.p, test.q
+		actual, err := Manhattan(test.p, test.q)
+		if err != nil {
+			t.Fatalf("%s: %v", test.name, err)
+		
