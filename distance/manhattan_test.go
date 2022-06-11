@@ -39,4 +39,6 @@ func TestManhattan(t *testing.T) {
 		actual, err := Manhattan(test.p, test.q)
 		if err != nil {
 			t.Fatalf("%s: %v", test.name, err)
-		
+		}
+		if actual != test.expected {
+			t.Errorf("%s: for inp
