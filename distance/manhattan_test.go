@@ -42,4 +42,7 @@ func TestManhattan(t *testing.T) {
 		}
 		if actual != test.expected {
 			t.Errorf("%s: for input %v and %v, expected %v, but got %v",
-				test.name, test.p, test.q, test.expected, actu
+				test.name, test.p, test.q, test.expected, actual)
+		}
+	}
+}
