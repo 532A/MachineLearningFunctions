@@ -1,1 +1,5 @@
-p
+package distance
+
+import (
+	"math"
+	"testing
