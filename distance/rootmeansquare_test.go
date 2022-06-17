@@ -2,4 +2,7 @@ package distance
 
 import (
 	"math"
-	"testing
+	"testing"
+)
+
+func TestRootMeanSquare(t *t
