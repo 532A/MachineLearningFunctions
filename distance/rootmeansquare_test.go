@@ -7,4 +7,6 @@ import (
 
 func TestRootMeanSquare(t *testing.T) {
 	tests := []struct {
-		name    
+		name     string
+		p        []float64
+		q        []f
