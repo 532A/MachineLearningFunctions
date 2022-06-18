@@ -5,4 +5,6 @@ import (
 	"testing"
 )
 
-func TestRootMeanSquare(t *t
+func TestRootMeanSquare(t *testing.T) {
+	tests := []struct {
+		name    
