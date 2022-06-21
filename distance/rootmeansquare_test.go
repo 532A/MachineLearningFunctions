@@ -9,4 +9,8 @@ func TestRootMeanSquare(t *testing.T) {
 	tests := []struct {
 		name     string
 		p        []float64
-		q        []f
+		q        []float64
+		expected float64
+	}{
+		{
+			name:     "E
