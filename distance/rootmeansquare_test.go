@@ -13,4 +13,6 @@ func TestRootMeanSquare(t *testing.T) {
 		expected float64
 	}{
 		{
-			name:     "E
+			name:     "Equal",
+			p:        []float64{1, 2, 3, 4, 5},
+	
