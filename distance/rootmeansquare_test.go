@@ -21,4 +21,5 @@ func TestRootMeanSquare(t *testing.T) {
 		{
 			name:     "One above",
 			p:        []float64{1, 2, 3, 4, 5},
-			q:        []float64{2, 3, 
+			q:        []float64{2, 3, 4, 5, 6},
+			expected: 1, // Square root of average s
