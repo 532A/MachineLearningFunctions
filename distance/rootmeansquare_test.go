@@ -33,4 +33,5 @@ func TestRootMeanSquare(t *testing.T) {
 		{
 			name:     "Same number twice",
 			p:        []float64{0, -1},
-			q:   
+			q:        []float64{9, 8},
+			expected: 9, // Square root of average squa
