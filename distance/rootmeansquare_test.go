@@ -37,4 +37,6 @@ func TestRootMeanSquare(t *testing.T) {
 			expected: 9, // Square root of average squared error is 9.
 		},
 		{
-			name:     "More c
+			name:     "More complex",
+			p:        []float64{1, 2, 3},
+		
