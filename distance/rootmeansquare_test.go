@@ -39,4 +39,5 @@ func TestRootMeanSquare(t *testing.T) {
 		{
 			name:     "More complex",
 			p:        []float64{1, 2, 3},
-		
+			q:        []float64{2, 12, 14},
+			expected
