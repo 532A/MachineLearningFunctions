@@ -45,4 +45,6 @@ func TestRootMeanSquare(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual, err := RootMeanSqu
+		actual, err := RootMeanSquare(test.p, test.q)
+		if err != nil {
+			t.Fatalf("%s: 
