@@ -49,4 +49,5 @@ func TestRootMeanSquare(t *testing.T) {
 		if err != nil {
 			t.Fatalf("%s: %v", test.name, err)
 		}
-		if actual != test.ex
+		if actual != test.expected {
+			t.Errorf("%s: for input %v and %v, expe
