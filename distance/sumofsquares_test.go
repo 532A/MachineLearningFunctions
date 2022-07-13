@@ -2,4 +2,5 @@ package distance
 
 import "testing"
 
-fun
+func TestSumOfSquares(t *testing.T) {
+	tests := []str
