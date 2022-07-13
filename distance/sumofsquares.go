@@ -10,3 +10,5 @@ func SumOfSquares(p []float64, q []float64) (r float64, err error) {
 		qq := q[i]
 		r += (qq - pp) * (qq - pp)
 	}
+	return
+}
