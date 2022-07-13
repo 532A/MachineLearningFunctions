@@ -3,4 +3,7 @@ package distance
 import "testing"
 
 func TestSumOfSquares(t *testing.T) {
-	tests := []str
+	tests := []struct {
+		name     string
+		p        []float64
+		q        []float
