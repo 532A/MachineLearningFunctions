@@ -10,4 +10,5 @@ func TestSumOfSquares(t *testing.T) {
 		expected float64
 	}{
 		{
-			name:  
+			name:     "Equal",
+			p:        []float64{1, 2, 3, 4, 5}
