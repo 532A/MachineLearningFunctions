@@ -25,4 +25,8 @@ func TestSumOfSquares(t *testing.T) {
 			name:     "Two below",
 			p:        []float64{2, 3, 4, 5, 6},
 			q:        []float64{0, 1, 2, 3, 4},
-			expected: 4 + 4 + 
+			expected: 4 + 4 + 4 + 4 + 4,
+		},
+	}
+
+	for _, test := range tests 
