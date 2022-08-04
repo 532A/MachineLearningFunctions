@@ -31,4 +31,5 @@ func TestSumOfSquares(t *testing.T) {
 
 	for _, test := range tests {
 		actual, err := SumOfSquares(test.p, test.q)
-		i
+		if err != nil {
+			t.Fatalf("%s: %v", test.name,
