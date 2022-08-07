@@ -1,3 +1,8 @@
 package random
 
-i
+import (
+	"math/rand"
+	"time"
+)
+
+func init
