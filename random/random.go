@@ -5,4 +5,8 @@ import (
 	"time"
 )
 
-func init
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+
+// Float64 returns 
