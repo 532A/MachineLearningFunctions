@@ -72,3 +72,40 @@ func (p Projection) Draw(img draw.Image) {
 			dx, dy, ok := corner(r, p.Width, p.Height, p.cosAngle, p.sinAngle, p.Scale, i+1, j+1, p.Cells, p.Function)
 			if !ok {
 				continue
+			}
+
+			a := image.Point{int(ax), int(ay)}
+			b := image.Point{int(bx), int(by)}
+			c := image.Point{int(cx), int(cy)}
+			d := image.Point{int(dx), int(dy)}
+
+			pg := raster.NewFilledPolygon(p.LineColor, p.FillColor, a, b, c, d)
+			pg.Draw(img)
+		}
+	}
+}
+
+func corner(xyrange float64, width, height int, cosAngle, sinAngle float64, zscale float64, i, j int, cells int, f func(float64, float64) float64) (float64, float64, bool) {
+	xyscale := float64(width) / 2.0 / xyrange
+
+	x := xyrange * (float64(i)/float64(cells) - 0.5)
+	y := xyrange * (float64(j)/float64(cells) - 0.5)
+	z := f(x, y)
+
+	sx := float64(width)/2 + (x-y)*cosAngle*xyscale //- z*zscale
+	sy := float64(height)/2 + (x+y)*sinAngle*xyscale - z*zscale
+
+	if math.IsNaN(sx) || math.IsNaN(sy) {
+		return 0, 0, false
+	}
+
+	return sx, sy, true
+}
+
+func drawBackground(img *image.RGBA, c color.RGBA) {
+	for x := 0; x < img.Bounds().Dx(); x++ {
+		for y := 0; y < img.Bounds().Dy(); y++ {
+			img.Set(x, y, c)
+		}
+	}
+}
