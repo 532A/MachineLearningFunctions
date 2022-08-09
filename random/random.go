@@ -10,4 +10,5 @@ func init() {
 }
 
 // Float64 returns a random float64 between min and max.
-func Float64(min, 
+func Float64(min, max float64) float64 {
+	return (max-min)*rand.Float6
