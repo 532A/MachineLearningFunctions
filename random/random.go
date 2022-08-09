@@ -14,4 +14,5 @@ func Float64(min, max float64) float64 {
 	return (max-min)*rand.Float64() + min
 }
 
-// Float64Vector returns a
+// Float64Vector returns an array of float64 values min and max.
+func Float64Vecto
