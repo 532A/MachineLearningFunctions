@@ -11,4 +11,7 @@ func init() {
 
 // Float64 returns a random float64 between min and max.
 func Float64(min, max float64) float64 {
-	return (max-min)*rand.Float6
+	return (max-min)*rand.Float64() + min
+}
+
+// Float64Vector returns a
