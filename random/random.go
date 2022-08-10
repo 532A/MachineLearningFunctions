@@ -16,4 +16,6 @@ func Float64(min, max float64) float64 {
 
 // Float64Vector returns an array of float64 values min and max.
 func Float64Vector(min, max float64, size int) []float64 {
-	op :=
+	op := make([]float64, size)
+	for i := 0; i < size; i++ {
+		op
