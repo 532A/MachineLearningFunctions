@@ -18,4 +18,7 @@ func Float64(min, max float64) float64 {
 func Float64Vector(min, max float64, size int) []float64 {
 	op := make([]float64, size)
 	for i := 0; i < size; i++ {
-		op
+		op[i] = Float64(min, max)
+	}
+	return op
+}
