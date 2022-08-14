@@ -4,4 +4,9 @@ package rbf
 func NewBias(count int) (b Bias) {
 	b.Outputs = make([]float64, count)
 	for i := 0; i < len(b.Outputs); i++ {
-		b.Output
+		b.Outputs[i] = 1.0
+	}
+	return
+}
+
+// Bias is a node with constant
