@@ -11,4 +11,7 @@ func NewBias(count int) (b Bias) {
 
 // Bias is a node with constant output.
 type Bias struct {
-	Outputs []float
+	Outputs []float64
+}
+
+// Calculate returns the Output value
