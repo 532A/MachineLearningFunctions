@@ -9,4 +9,6 @@ func NewBias(count int) (b Bias) {
 	return
 }
 
-// Bias is a node with constant
+// Bias is a node with constant output.
+type Bias struct {
+	Outputs []float
