@@ -15,4 +15,5 @@ type Bias struct {
 }
 
 // Calculate returns the Output values regardless of input.
-func (b Bias) Calculate(inpu
+func (b Bias) Calculate(input []float64) (op []float64, err error) {
+	return b.Outputs
