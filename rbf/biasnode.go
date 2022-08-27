@@ -19,4 +19,5 @@ func (b Bias) Calculate(input []float64) (op []float64, err error) {
 	return b.Outputs, nil
 }
 
-// OutputCount returns the number of
+// OutputCount returns the number of output nodes.
+func (b Bias) OutputCou
