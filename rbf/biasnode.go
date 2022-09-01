@@ -20,4 +20,6 @@ func (b Bias) Calculate(input []float64) (op []float64, err error) {
 }
 
 // OutputCount returns the number of output nodes.
-func (b Bias) OutputCou
+func (b Bias) OutputCount() int {
+	return len(b.Outputs)
+}
