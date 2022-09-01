@@ -1,3 +1,8 @@
 package rbf
 
-import
+import (
+	"reflect"
+	"testing"
+)
+
+func TestBiasNode(
