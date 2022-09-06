@@ -5,4 +5,7 @@ import (
 	"testing"
 )
 
-func TestBiasNode(
+func TestBiasNode(t *testing.T) {
+	tests := []struct {
+		name     string
+		c
