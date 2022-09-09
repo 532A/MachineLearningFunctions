@@ -11,3 +11,6 @@ func TestBiasNode(t *testing.T) {
 		count    int
 		input    []float64
 		expected []float64
+	}{
+		{
+			name:     "get the same output regardless
