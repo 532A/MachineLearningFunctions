@@ -21,4 +21,7 @@ func TestBiasNode(t *testing.T) {
 		{
 			name:     "get the same output regardless of input (2)",
 			count:    1,
-			input:    []float6
+			input:    []float64{12.0},
+			expected: []float64{1.0},
+		},
+		{
