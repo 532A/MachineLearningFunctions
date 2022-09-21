@@ -19,4 +19,4 @@ func TestBiasNode(t *testing.T) {
 			expected: []float64{1.0},
 		},
 		{
-			
+			name:     "get the same output regardless of 
