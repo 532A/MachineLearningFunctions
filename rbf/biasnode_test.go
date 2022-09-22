@@ -25,4 +25,6 @@ func TestBiasNode(t *testing.T) {
 			expected: []float64{1.0},
 		},
 		{
-			name:     "changing the count increases the number
+			name:     "changing the count increases the number of output values",
+			count:    3,
+			input:   
