@@ -35,3 +35,8 @@ func TestBiasNode(t *testing.T) {
 			count:    3,
 			input:    nil,
 			expected: []float64{1.0, 1.0, 1.0},
+		},
+	}
+
+	for _, test := range tests {
+		b := N
