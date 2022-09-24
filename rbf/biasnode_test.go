@@ -33,4 +33,5 @@ func TestBiasNode(t *testing.T) {
 		{
 			name:     "the input is ignored",
 			count:    3,
-			
+			input:    nil,
+			expected: []float64{1.0, 1.0, 1.0},
