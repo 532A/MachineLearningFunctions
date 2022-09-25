@@ -40,4 +40,6 @@ func TestBiasNode(t *testing.T) {
 
 	for _, test := range tests {
 		b := NewBias(test.count)
-		actual, err := 
+		actual, err := b.Calculate(test.input)
+		if err != nil {
+			t.Erro
