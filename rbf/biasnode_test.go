@@ -42,4 +42,5 @@ func TestBiasNode(t *testing.T) {
 		b := NewBias(test.count)
 		actual, err := b.Calculate(test.input)
 		if err != nil {
-			t.Erro
+			t.Errorf("%s: unexpected error: %v", test.name, err)
+			
