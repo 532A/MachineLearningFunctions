@@ -43,4 +43,6 @@ func TestBiasNode(t *testing.T) {
 		actual, err := b.Calculate(test.input)
 		if err != nil {
 			t.Errorf("%s: unexpected error: %v", test.name, err)
-			
+			continue
+		}
+		if !reflect.DeepEqual(actu
