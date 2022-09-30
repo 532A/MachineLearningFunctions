@@ -50,4 +50,7 @@ func TestBiasNode(t *testing.T) {
 				test.input, test.expected, actual)
 		}
 		if b.OutputCount() != test.count {
-			t.Errorf("%s: expected output count of %d, got %d", test.name, t
+			t.Errorf("%s: expected output count of %d, got %d", test.name, test.count, b.OutputCount())
+		}
+	}
+}
