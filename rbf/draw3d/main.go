@@ -1,1 +1,7 @@
-package mai
+package main
+
+import (
+	"fmt"
+	"image"
+	"image/color"
+	"
