@@ -11,4 +11,7 @@ import (
 	"github.com/a-h/ml/rbf"
 )
 
-var palette
+var palette = []color.Color{color.White, color.Black}
+
+func main() {
+	
