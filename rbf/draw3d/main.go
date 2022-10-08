@@ -7,4 +7,8 @@ import (
 	"image/gif"
 	"os"
 
-	"github.com/a-h/ml/project
+	"github.com/a-h/ml/projection"
+	"github.com/a-h/ml/rbf"
+)
+
+var palette
