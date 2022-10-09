@@ -16,4 +16,6 @@ var palette = []color.Color{color.White, color.Black}
 func main() {
 	file, err := os.Create("op.gif")
 	if err != nil {
-		fmt.Pri
+		fmt.Println("Failed to create op.gif file:", err)
+		return
+	}
