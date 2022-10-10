@@ -19,3 +19,7 @@ func main() {
 		fmt.Println("Failed to create op.gif file:", err)
 		return
 	}
+
+	imgSize := image.Rect(0, 0, 500, 500)
+
+	anim
