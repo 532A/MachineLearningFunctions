@@ -22,4 +22,8 @@ func main() {
 
 	imgSize := image.Rect(0, 0, 500, 500)
 
-	anim
+	anim := gif.GIF{LoopCount: 128}
+
+	delay := 1 // 10ms
+
+	
