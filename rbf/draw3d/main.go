@@ -27,3 +27,4 @@ func main() {
 	delay := 1 // 10ms
 
 	deviationFrom, deviationTo := 0.0, 10.0
+	deviationStep := (deviationFrom - deviationTo) / floa
