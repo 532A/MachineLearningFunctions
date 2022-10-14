@@ -27,4 +27,6 @@ func main() {
 	delay := 1 // 10ms
 
 	deviationFrom, deviationTo := 0.0, 10.0
-	deviationStep := (deviationFrom - deviationTo) / floa
+	deviationStep := (deviationFrom - deviationTo) / float64(anim.LoopCount)
+
+	for i := 0; i < anim.Loo
