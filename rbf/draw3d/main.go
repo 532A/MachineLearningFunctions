@@ -29,4 +29,5 @@ func main() {
 	deviationFrom, deviationTo := 0.0, 10.0
 	deviationStep := (deviationFrom - deviationTo) / float64(anim.LoopCount)
 
-	for i := 0; i < anim.Loo
+	for i := 0; i < anim.LoopCount; i++ {
+		img := image.NewPaletted(imgSize, palett
