@@ -30,4 +30,6 @@ func main() {
 	deviationStep := (deviationFrom - deviationTo) / float64(anim.LoopCount)
 
 	for i := 0; i < anim.LoopCount; i++ {
-		img := image.NewPaletted(imgSize, palett
+		img := image.NewPaletted(imgSize, palette)
+		center := []float64{0.0, 0.0}
+		deviation := deviatio
