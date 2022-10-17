@@ -33,4 +33,5 @@ func main() {
 		img := image.NewPaletted(imgSize, palette)
 		center := []float64{0.0, 0.0}
 		deviation := deviationFrom + deviationStep
-		gaussian := rbf.NewGaussianVector
+		gaussian := rbf.NewGaussianVector(1.0, center, deviation)
+		f := func(x, y float64)
