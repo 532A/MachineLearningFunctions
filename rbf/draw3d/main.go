@@ -32,4 +32,5 @@ func main() {
 	for i := 0; i < anim.LoopCount; i++ {
 		img := image.NewPaletted(imgSize, palette)
 		center := []float64{0.0, 0.0}
-		deviation := deviatio
+		deviation := deviationFrom + deviationStep
+		gaussian := rbf.NewGaussianVector
