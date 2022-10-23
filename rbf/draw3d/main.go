@@ -41,4 +41,5 @@ func main() {
 			}
 			return z
 		}
-		pro
+		projectionAngle := 30.0
+		d := projection.New(-1.0, 1.0, f
