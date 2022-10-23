@@ -36,4 +36,9 @@ func main() {
 		gaussian := rbf.NewGaussianVector(1.0, center, deviation)
 		f := func(x, y float64) (z float64) {
 			z, err := gaussian([]float64{x, y})
-			if
+			if err != nil {
+				panic(err)
+			}
+			return z
+		}
+		pro
