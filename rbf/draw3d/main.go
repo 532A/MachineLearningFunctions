@@ -42,4 +42,5 @@ func main() {
 			return z
 		}
 		projectionAngle := 30.0
-		d := projection.New(-1.0, 1.0, f
+		d := projection.New(-1.0, 1.0, f, imgSize.Dx(), imgSize.Dy(), projectionAngle)
+		
