@@ -47,4 +47,6 @@ func main() {
 
 		// Add the image to the output.
 		anim.Delay = append(anim.Delay, delay)
-		anim.Ima
+		anim.Image = append(anim.Image, img)
+
+		deviationFrom += de
