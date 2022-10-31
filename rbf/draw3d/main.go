@@ -46,4 +46,5 @@ func main() {
 		d.Draw(img)
 
 		// Add the image to the output.
-		an
+		anim.Delay = append(anim.Delay, delay)
+		anim.Ima
