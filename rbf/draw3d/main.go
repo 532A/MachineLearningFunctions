@@ -52,4 +52,5 @@ func main() {
 		deviationFrom += deviationStep
 	}
 
-	gif.EncodeAll(file, &ani
+	gif.EncodeAll(file, &anim)
+}
