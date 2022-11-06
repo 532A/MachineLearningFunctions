@@ -8,4 +8,6 @@ import (
 
 	"gonum.org/v1/plot/plotter"
 
-	"githu
+	"github.com/a-h/ml/rbf"
+	"gonum.org/v1/plot"
+	"gonum.org/v1/plot/plotutil"
