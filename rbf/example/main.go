@@ -3,4 +3,9 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"o
+	"os"
+	"time"
+
+	"gonum.org/v1/plot/plotter"
+
+	"githu
