@@ -49,4 +49,7 @@ func main() {
 		anim.Delay = append(anim.Delay, delay)
 		anim.Image = append(anim.Image, img)
 
-		deviationFrom += de
+		deviationFrom += deviationStep
+	}
+
+	gif.EncodeAll(file, &ani
