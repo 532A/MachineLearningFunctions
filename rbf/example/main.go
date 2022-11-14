@@ -15,4 +15,8 @@ import (
 )
 
 func init() {
-	rand
+	rand.Seed(time.Now().Unix())
+}
+
+func main() {
+	p, err := plot.New()
