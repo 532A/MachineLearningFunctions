@@ -20,3 +20,5 @@ func init() {
 
 func main() {
 	p, err := plot.New()
+	if err != nil {
+		fmt.Println("Error creating Plot: ",
