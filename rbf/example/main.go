@@ -21,4 +21,8 @@ func init() {
 func main() {
 	p, err := plot.New()
 	if err != nil {
-		fmt.Println("Error creating Plot: ",
+		fmt.Println("Error creating Plot: ", err)
+		os.Exit(-1)
+	}
+
+	p.Title.Text = "Gaussia
