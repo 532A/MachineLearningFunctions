@@ -31,4 +31,7 @@ func main() {
 	p.X.Label.Text = "X"
 	p.Y.Min = 0
 	p.Y.Padding = 0
-	p.Y.Label.Text =
+	p.Y.Label.Text = "Y"
+
+	g := rbf.NewGaussian(1.0, 0.0, 0.5)
+	rw
