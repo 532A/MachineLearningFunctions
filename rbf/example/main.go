@@ -36,4 +36,6 @@ func main() {
 	g := rbf.NewGaussian(1.0, 0.0, 0.5)
 	rw := rbf.NewRickerWavelet(1.0, 0.0, 1.0)
 
-	var gaussian, rick
+	var gaussian, rickerwavelet plotter.XYs
+	step := 0.1
+	for i := -6.0; i 
