@@ -28,4 +28,7 @@ func main() {
 	p.Title.Text = "Gaussian and Ricker Wavelet RBFs"
 	p.X.Min = 0
 	p.X.Padding = 0
-	p.X.Label.Text =
+	p.X.Label.Text = "X"
+	p.Y.Min = 0
+	p.Y.Padding = 0
+	p.Y.Label.Text =
