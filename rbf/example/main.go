@@ -34,4 +34,6 @@ func main() {
 	p.Y.Label.Text = "Y"
 
 	g := rbf.NewGaussian(1.0, 0.0, 0.5)
-	rw
+	rw := rbf.NewRickerWavelet(1.0, 0.0, 1.0)
+
+	var gaussian, rick
