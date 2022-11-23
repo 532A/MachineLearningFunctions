@@ -44,4 +44,9 @@ func main() {
 			Y: g(float64(i)),
 		})
 		rickerwavelet = append(rickerwavelet, xy{
-			X: float64
+			X: float64(i),
+			Y: rw(float64(i)),
+		})
+	}
+
+	plotutil.AddLin
