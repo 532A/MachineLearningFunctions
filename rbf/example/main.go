@@ -43,4 +43,5 @@ func main() {
 			X: float64(i),
 			Y: g(float64(i)),
 		})
-	
+		rickerwavelet = append(rickerwavelet, xy{
+			X: float64
