@@ -39,4 +39,8 @@ func main() {
 	var gaussian, rickerwavelet plotter.XYs
 	step := 0.1
 	for i := -6.0; i < 6.0; i += step {
-		gaussian = append(gaussian, xy
+		gaussian = append(gaussian, xy{
+			X: float64(i),
+			Y: g(float64(i)),
+		})
+	
