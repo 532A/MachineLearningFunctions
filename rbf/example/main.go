@@ -49,4 +49,6 @@ func main() {
 		})
 	}
 
-	plotutil.AddLin
+	plotutil.AddLines(p, gaussian, rickerwavelet)
+
+	// Save the plot
