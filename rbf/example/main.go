@@ -51,4 +51,5 @@ func main() {
 
 	plotutil.AddLines(p, gaussian, rickerwavelet)
 
-	// Save the plot
+	// Save the plot to a PNG file.
+	if err := p.Save(15*vg.Centimeter,
