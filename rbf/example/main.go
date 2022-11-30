@@ -52,4 +52,11 @@ func main() {
 	plotutil.AddLines(p, gaussian, rickerwavelet)
 
 	// Save the plot to a PNG file.
-	if err := p.Save(15*vg.Centimeter, 15*vg.Centimeter, "points.png"); err != ni
+	if err := p.Save(15*vg.Centimeter, 15*vg.Centimeter, "points.png"); err != nil {
+		panic(err)
+	}
+}
+
+type xy struct {
+	X, Y float64
+}
