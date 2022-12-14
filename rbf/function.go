@@ -4,4 +4,5 @@ package rbf
 // Examples are rbf.NewGaussian and rbf.RickerWavelet.
 type Function func(v float64) (r float64)
 
-// VectorFunction is a radial basis fu
+// VectorFunction is a radial basis function which operates on a vector.
+// Exa
