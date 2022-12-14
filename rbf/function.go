@@ -5,4 +5,5 @@ package rbf
 type Function func(v float64) (r float64)
 
 // VectorFunction is a radial basis function which operates on a vector.
-// Exa
+// Examples are rbf.NewGaussianVector.
+type VectorFunc
