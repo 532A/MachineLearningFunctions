@@ -9,4 +9,5 @@ func TestGaussian(t *testing.T) {
 	}
 }
 
-func TestGaussianVe
+func TestGaussianVectorSuccess(t *testing.T) {
+	center := []flo
