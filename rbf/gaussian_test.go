@@ -11,4 +11,5 @@ func TestGaussian(t *testing.T) {
 
 func TestGaussianVectorSuccess(t *testing.T) {
 	center := []float64{3.0, 5.0}
-	f := NewGaussianVecto
+	f := NewGaussianVector(6.0, center, 1.0)
+	actual, err := f([]float64{3.0, 5.0
