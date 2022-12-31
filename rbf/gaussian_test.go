@@ -14,4 +14,7 @@ func TestGaussianVectorSuccess(t *testing.T) {
 	f := NewGaussianVector(6.0, center, 1.0)
 	actual, err := f([]float64{3.0, 5.0})
 	if err != nil {
-		t.Fatal("unexpected error e
+		t.Fatal("unexpected error executing VectorFunction:", err)
+	}
+	if actual != 6.0 {
+	
