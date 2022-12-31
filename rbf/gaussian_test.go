@@ -12,4 +12,6 @@ func TestGaussian(t *testing.T) {
 func TestGaussianVectorSuccess(t *testing.T) {
 	center := []float64{3.0, 5.0}
 	f := NewGaussianVector(6.0, center, 1.0)
-	actual, err := f([]float64{3.0, 5.0
+	actual, err := f([]float64{3.0, 5.0})
+	if err != nil {
+		t.Fatal("unexpected error e
