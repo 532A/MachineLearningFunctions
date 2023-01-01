@@ -21,4 +21,5 @@ func TestGaussianVectorSuccess(t *testing.T) {
 	}
 }
 
-func TestGaussianVecto
+func TestGaussianVectorErrors(t *testing.T) {
+	// Executing with inva
