@@ -17,4 +17,8 @@ func TestGaussianVectorSuccess(t *testing.T) {
 		t.Fatal("unexpected error executing VectorFunction:", err)
 	}
 	if actual != 6.0 {
-		t.Errorf("expected the peak of the curve to be at { 3.0, 5.0 } and the value to be 6.0, bu
+		t.Errorf("expected the peak of the curve to be at { 3.0, 5.0 } and the value to be 6.0, but got %v", actual)
+	}
+}
+
+func TestGaussianVecto
