@@ -23,4 +23,7 @@ func TestGaussianVectorSuccess(t *testing.T) {
 
 func TestGaussianVectorErrors(t *testing.T) {
 	// Executing with invalid values.
-	f := NewGaussianVector(6.0, []float64{3.0, 5.
+	f := NewGaussianVector(6.0, []float64{3.0, 5.0}, 1.0)
+	_, err := f([]float64{})
+	if err == nil {
+		t
