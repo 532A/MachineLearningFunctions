@@ -22,4 +22,5 @@ func TestGaussianVectorSuccess(t *testing.T) {
 }
 
 func TestGaussianVectorErrors(t *testing.T) {
-	// Executing with inva
+	// Executing with invalid values.
+	f := NewGaussianVector(6.0, []float64{3.0, 5.
