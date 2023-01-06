@@ -26,4 +26,6 @@ func TestGaussianVectorErrors(t *testing.T) {
 	f := NewGaussianVector(6.0, []float64{3.0, 5.0}, 1.0)
 	_, err := f([]float64{})
 	if err == nil {
-		t.Fatal("expected error executing the function with invali
+		t.Fatal("expected error executing the function with invalid parameters, but didn't get one")
+	}
+	_, err = 
