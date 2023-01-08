@@ -30,4 +30,6 @@ func TestGaussianVectorErrors(t *testing.T) {
 	}
 	_, err = f(nil)
 	if err == nil {
-		t.Fatal("expected error executing the function with a nil paramet
+		t.Fatal("expected error executing the function with a nil parameter, but didn't get one")
+	}
+}
