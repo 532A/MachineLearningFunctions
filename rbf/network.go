@@ -58,3 +58,47 @@ func (nodes Network) Calculate(input []float64) (op []float64, err error) {
 			configured = true
 		}
 		// Check that the output node count matches the expected count.
+		if len(nv) != len(op) {
+			err = fmt.Errorf("rbf: The RBF has been configured with %d output nodes, but node %d has %d output nodes",
+				len(op), i, len(nv))
+			return
+		}
+		// Update the output weights.
+		for i, nnv := range nv {
+			op[i] += nnv
+		}
+	}
+	return
+}
+
+// GetMemorySize returns the size of the memory of the network.
+func (nodes Network) GetMemorySize() (size int) {
+	for _, n := range nodes {
+		if t, ok := n.(Trainable); ok {
+			size += t.GetMemorySize()
+		}
+	}
+	return
+}
+
+// GetMemory returns the tunable parameters of the network.
+func (nodes Network) GetMemory() (memory []float64) {
+	for _, n := range nodes {
+		if t, ok := n.(Trainable); ok {
+			memory = append(memory, t.GetMemory()...)
+		}
+	}
+	return
+}
+
+// SetMemory sets the tunable parameters of the network.
+func (nodes Network) SetMemory(memory []float64) {
+	var i int
+	for _, n := range nodes {
+		if t, ok := n.(Trainable); ok {
+			j := t.GetMemorySize()
+			t.SetMemory(memory[i : i+j])
+			i += j
+		}
+	}
+}
