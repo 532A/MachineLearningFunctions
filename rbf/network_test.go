@@ -5,4 +5,6 @@ import (
 	"testing"
 )
 
-func TestNetworkMem
+func TestNetworkMemory(t *testing.T) {
+	a, err := NewNetwork(
+		
