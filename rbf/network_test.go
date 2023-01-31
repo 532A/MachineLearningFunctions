@@ -7,4 +7,6 @@ import (
 
 func TestNetworkMemory(t *testing.T) {
 	a, err := NewNetwork(
-		
+		&Node{
+			Width:         0.5,
+			Centroid:      []
