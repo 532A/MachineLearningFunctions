@@ -13,4 +13,6 @@ func TestNetworkMemory(t *testing.T) {
 			InputWeights:  []float64{3.0, 4.0},
 			OutputWeights: []float64{5.0, 6.0},
 		},
-		&Node
+		&Node{
+			Width:         1.0,
+			Centroid:      []flo
