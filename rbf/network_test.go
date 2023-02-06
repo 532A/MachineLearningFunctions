@@ -21,4 +21,4 @@ func TestNetworkMemory(t *testing.T) {
 		},
 	)
 	if err != nil {
-	
+		t.Fatalf("Failed to create network 
