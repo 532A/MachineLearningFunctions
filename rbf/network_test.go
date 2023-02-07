@@ -26,4 +26,5 @@ func TestNetworkMemory(t *testing.T) {
 	b, err := NewNetwork(
 		&Node{
 			Width:         -1,
-			Centroid:      []floa
+			Centroid:      []float64{1.0, 2.0},
+			InputWeights:  []float64{-
