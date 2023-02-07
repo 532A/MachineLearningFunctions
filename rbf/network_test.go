@@ -24,4 +24,6 @@ func TestNetworkMemory(t *testing.T) {
 		t.Fatalf("Failed to create network a: %v", err)
 	}
 	b, err := NewNetwork(
-		
+		&Node{
+			Width:         -1,
+			Centroid:      []floa
