@@ -32,4 +32,6 @@ func TestNetworkMemory(t *testing.T) {
 		},
 		&Node{
 			Width:         -1,
-			Centroid:      []float64{1.0, 2.0}, // Centroid doesn't chang
+			Centroid:      []float64{1.0, 2.0}, // Centroid doesn't change.
+			InputWeights:  []float64{-1, -1},
+			Output
