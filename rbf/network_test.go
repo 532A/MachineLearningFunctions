@@ -37,4 +37,5 @@ func TestNetworkMemory(t *testing.T) {
 			OutputWeights: []float64{-1, -1},
 		},
 	)
-	if err != n
+	if err != nil {
+		t.Fatalf("Failed to c
