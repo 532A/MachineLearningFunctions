@@ -40,4 +40,6 @@ func TestNetworkMemory(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Failed to create network b: %v", err)
 	}
-	b.SetMemo
+	b.SetMemory(a.GetMemory())
+
+	if !reflect.DeepEqual(a, b)
