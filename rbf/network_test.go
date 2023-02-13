@@ -43,4 +43,8 @@ func TestNetworkMemory(t *testing.T) {
 	b.SetMemory(a.GetMemory())
 
 	if !reflect.DeepEqual(a, b) {
-		t.Errorf("Expected b == a after setting memory, but got fa
+		t.Errorf("Expected b == a after setting memory, but got false.")
+		t.Errorf("a: %v", a)
+		t.Errorf("b: %v", b)
+	}
+}
