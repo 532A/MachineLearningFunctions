@@ -8,4 +8,6 @@ import (
 )
 
 // NewNode returns a new Node.
-func NewNode(inputCount int, ou
+func NewNode(inputCount int, outputCount int) *Node {
+	return &Node{
+		InputWeights:  ra
