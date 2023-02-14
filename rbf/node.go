@@ -7,4 +7,5 @@ import (
 	"github.com/a-h/ml/random"
 )
 
-// NewNode return
+// NewNode returns a new Node.
+func NewNode(inputCount int, ou
