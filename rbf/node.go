@@ -10,4 +10,5 @@ import (
 // NewNode returns a new Node.
 func NewNode(inputCount int, outputCount int) *Node {
 	return &Node{
-		InputWeights:  ra
+		InputWeights:  random.Float64Vector(-10, 10, inputCount),
+		Centroid
