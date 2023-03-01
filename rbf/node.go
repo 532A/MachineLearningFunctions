@@ -17,4 +17,4 @@ func NewNode(inputCount int, outputCount int) *Node {
 	}
 }
 
-// Node defines a node in an R
+// Node defines a node in an RBF network which uses a distance function to calcu
