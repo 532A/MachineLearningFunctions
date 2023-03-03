@@ -19,4 +19,6 @@ func NewNode(inputCount int, outputCount int) *Node {
 
 // Node defines a node in an RBF network which uses a distance function to calculate distance.
 type Node struct {
-	InputWeights []float6
+	InputWeights []float64
+	Centroid     []float64
+	// RBF functio
