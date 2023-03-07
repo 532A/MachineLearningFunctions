@@ -26,3 +26,5 @@ type Node struct {
 	OutputWeights []float64
 }
 
+func (n Node) String() string {
+	b, err := json.Marshal(n
