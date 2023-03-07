@@ -21,4 +21,8 @@ func NewNode(inputCount int, outputCount int) *Node {
 type Node struct {
 	InputWeights []float64
 	Centroid     []float64
-	// RBF functio
+	// RBF function parameters.
+	Width         float64
+	OutputWeights []float64
+}
+
