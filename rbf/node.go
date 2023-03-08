@@ -35,4 +35,4 @@ func (n Node) String() string {
 }
 
 // Calculate the output of the node.
-func (n *N
+func (n *Node) Calculate(input []float64) (op []float64,
