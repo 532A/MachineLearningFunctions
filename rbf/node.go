@@ -29,4 +29,6 @@ type Node struct {
 func (n Node) String() string {
 	b, err := json.Marshal(n)
 	if err != nil {
-		return fmt.Sprintf("rbf.Node
+		return fmt.Sprintf("rbf.Node: error marshalling to JSON: %v", err)
+	}
+	return str
