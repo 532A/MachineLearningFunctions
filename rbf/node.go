@@ -31,4 +31,8 @@ func (n Node) String() string {
 	if err != nil {
 		return fmt.Sprintf("rbf.Node: error marshalling to JSON: %v", err)
 	}
-	return str
+	return string(b)
+}
+
+// Calculate the output of the node.
+func (n *N
