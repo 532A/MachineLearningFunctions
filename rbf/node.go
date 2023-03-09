@@ -36,4 +36,5 @@ func (n Node) String() string {
 
 // Calculate the output of the node.
 func (n *Node) Calculate(input []float64) (op []float64, err error) {
-	if len(n.InputWeights) != len(input
+	if len(n.InputWeights) != len(input) {
+		err = fmt.Errorf("rbf: the input vector h
