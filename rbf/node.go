@@ -37,4 +37,7 @@ func (n Node) String() string {
 // Calculate the output of the node.
 func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	if len(n.InputWeights) != len(input) {
-		err = fmt.Errorf("rbf: the input vector has a length of %d values and should have the same number of input weights, but we have %d node input we
+		err = fmt.Errorf("rbf: the input vector has a length of %d values and should have the same number of input weights, but we have %d node input weights",
+			len(input), len(n.InputWeights))
+		return
+	}
