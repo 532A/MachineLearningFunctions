@@ -41,3 +41,6 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 			len(input), len(n.InputWeights))
 		return
 	}
+
+	// Scale the input against the node's weights
+	sca
