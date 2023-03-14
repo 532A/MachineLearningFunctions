@@ -43,4 +43,5 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	}
 
 	// Scale the input against the node's weights
-	sca
+	scaledInput := make([]float64, len(input))
+	for i, iv :
