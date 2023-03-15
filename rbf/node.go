@@ -48,4 +48,5 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 		scaledInput[i] = iv * n.InputWeights[i]
 	}
 
-	// Scale the distance using the R
+	// Scale the distance using the RBF function then multiply by the scalar output weights.
+	ou
