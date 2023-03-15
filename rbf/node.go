@@ -49,4 +49,4 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	}
 
 	// Scale the distance using the RBF function then multiply by the scalar output weights.
-	ou
+	output, err := NewGaussianVector(1.0, n.Centroid, n.
