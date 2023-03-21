@@ -51,4 +51,6 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	// Scale the distance using the RBF function then multiply by the scalar output weights.
 	output, err := NewGaussianVector(1.0, n.Centroid, n.Width)(scaledInput)
 	if err != nil {
-		err = fmt.Errorf("rbf: could not calculate gaussian RBF:
+		err = fmt.Errorf("rbf: could not calculate gaussian RBF: %v", err)
+	}
+	op = make([]float64, len(n.OutputWeigh
