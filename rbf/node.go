@@ -53,4 +53,5 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	if err != nil {
 		err = fmt.Errorf("rbf: could not calculate gaussian RBF: %v", err)
 	}
-	op = make([]float64, len(n.OutputWeigh
+	op = make([]float64, len(n.OutputWeights))
+	for i, outputWeight := range n.OutputWeights
