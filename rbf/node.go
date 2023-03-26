@@ -60,4 +60,4 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 	return
 }
 
-// O
+// OutputCount returns the number of output no
