@@ -62,4 +62,7 @@ func (n *Node) Calculate(input []float64) (op []float64, err error) {
 
 // OutputCount returns the number of output nodes.
 func (n *Node) OutputCount() int {
-	return len(n
+	return len(n.OutputWeights)
+}
+
+// GetMemorySize returns the size of
