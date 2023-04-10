@@ -66,4 +66,5 @@ func (n *Node) OutputCount() int {
 }
 
 // GetMemorySize returns the size of the node's internal state.
-func (n *Node) G
+func (n *Node) GetMemorySize() int {
+	return len(n.InputWeight
