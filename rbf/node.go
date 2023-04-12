@@ -70,4 +70,5 @@ func (n *Node) GetMemorySize() int {
 	return len(n.InputWeights) + 1 + len(n.OutputWeights) // 1 = a value for n.Width
 }
 
-// GetMemory returns the node's internal s
+// GetMemory returns the node's internal state as an array.
+func (n *Node) GetMemory() (op []float64) 
