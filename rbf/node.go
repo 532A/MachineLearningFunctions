@@ -71,4 +71,5 @@ func (n *Node) GetMemorySize() int {
 }
 
 // GetMemory returns the node's internal state as an array.
-func (n *Node) GetMemory() (op []float64) 
+func (n *Node) GetMemory() (op []float64) {
+	//TODO: Benchmark this approach and check th
