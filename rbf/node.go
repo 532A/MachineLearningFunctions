@@ -72,4 +72,5 @@ func (n *Node) GetMemorySize() int {
 
 // GetMemory returns the node's internal state as an array.
 func (n *Node) GetMemory() (op []float64) {
-	//TODO: Benchmark this approach and check th
+	//TODO: Benchmark this approach and check that it's OK. I think it is given Go's slice internals.
+	op = a
