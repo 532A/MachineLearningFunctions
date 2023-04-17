@@ -75,4 +75,8 @@ func (n *Node) GetMemory() (op []float64) {
 	//TODO: Benchmark this approach and check that it's OK. I think it is given Go's slice internals.
 	op = append(op, n.InputWeights...)
 	op = append(op, n.Width)
-	op = append
+	op = append(op, n.OutputWeights...)
+	return
+}
+
+// SetMemory upd
