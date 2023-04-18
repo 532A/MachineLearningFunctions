@@ -79,4 +79,5 @@ func (n *Node) GetMemory() (op []float64) {
 	return
 }
 
-// SetMemory upd
+// SetMemory updates the node's internal state.
+func (n *Node) 
