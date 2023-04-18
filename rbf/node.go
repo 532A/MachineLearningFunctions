@@ -80,4 +80,5 @@ func (n *Node) GetMemory() (op []float64) {
 }
 
 // SetMemory updates the node's internal state.
-func (n *Node) 
+func (n *Node) SetMemory(m []float64) {
+	//TODO: Add error handling her
