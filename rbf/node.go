@@ -81,4 +81,6 @@ func (n *Node) GetMemory() (op []float64) {
 
 // SetMemory updates the node's internal state.
 func (n *Node) SetMemory(m []float64) {
-	//TODO: Add error handling here, check the lengths etc. Lots of opportunities to panic
+	//TODO: Add error handling here, check the lengths etc. Lots of opportunities to panic here.
+	var index int
+	n.InputWeights = m[index:le
