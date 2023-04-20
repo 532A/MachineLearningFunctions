@@ -83,4 +83,6 @@ func (n *Node) GetMemory() (op []float64) {
 func (n *Node) SetMemory(m []float64) {
 	//TODO: Add error handling here, check the lengths etc. Lots of opportunities to panic here.
 	var index int
-	n.InputWeights = m[index:le
+	n.InputWeights = m[index:len(n.InputWeights)]
+	index = len(n.InputWeights)
+	n.Wi
