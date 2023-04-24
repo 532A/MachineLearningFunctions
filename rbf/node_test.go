@@ -2,4 +2,9 @@ package rbf
 
 import (
 	"reflect"
-	"t
+	"testing"
+)
+
+func TestNode(t *testing.T) {
+	tests := []struct {
+		na
