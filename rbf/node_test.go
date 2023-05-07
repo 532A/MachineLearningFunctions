@@ -10,4 +10,7 @@ func TestNode(t *testing.T) {
 		name     string
 		node     *Node
 		input    []float64
-		e
+		expected []float64
+	}{
+		{
+			name: "returns RBF distance f
