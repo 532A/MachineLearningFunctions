@@ -15,4 +15,5 @@ func TestNode(t *testing.T) {
 		{
 			name: "returns RBF distance from the input",
 			node: &Node{
-				Widt
+				Width:         0.5,
+				Centroid:      []floa
