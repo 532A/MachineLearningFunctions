@@ -13,4 +13,6 @@ func TestNode(t *testing.T) {
 		expected []float64
 	}{
 		{
-			name: "returns RBF distance f
+			name: "returns RBF distance from the input",
+			node: &Node{
+				Widt
