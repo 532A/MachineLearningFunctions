@@ -17,4 +17,7 @@ func TestNode(t *testing.T) {
 			node: &Node{
 				Width:         0.5,
 				Centroid:      []float64{1.0},
-				InputWeights:  []float64
+				InputWeights:  []float64{1.0},
+				OutputWeights: []float64{1.0},
+			},
+			input:   
