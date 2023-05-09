@@ -20,4 +20,7 @@ func TestNode(t *testing.T) {
 				InputWeights:  []float64{1.0},
 				OutputWeights: []float64{1.0},
 			},
-			input:   
+			input:    []float64{1.0},
+			expected: []float64{1.0},
+		},
+	
