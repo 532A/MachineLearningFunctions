@@ -23,4 +23,7 @@ func TestNode(t *testing.T) {
 			input:    []float64{1.0},
 			expected: []float64{1.0},
 		},
-	
+	}
+
+	for _, test := range tests {
+		actual, err 
