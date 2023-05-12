@@ -26,4 +26,6 @@ func TestNode(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual, err 
+		actual, err := test.node.Calculate(test.input)
+		if err != nil {
+			t.
