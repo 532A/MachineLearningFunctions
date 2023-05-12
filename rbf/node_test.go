@@ -28,4 +28,7 @@ func TestNode(t *testing.T) {
 	for _, test := range tests {
 		actual, err := test.node.Calculate(test.input)
 		if err != nil {
-			t.Errorf("%s: unexpected error: %v", test.name, 
+			t.Errorf("%s: unexpected error: %v", test.name, err)
+			continue
+		}
+		if !reflect.DeepEqual(actual,
