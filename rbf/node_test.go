@@ -32,4 +32,5 @@ func TestNode(t *testing.T) {
 			continue
 		}
 		if !reflect.DeepEqual(actual, test.expected) {
-			t.Errorf("%s: for input %v, expect
+			t.Errorf("%s: for input %v, expected output %v, but got %v", test.name,
+			
