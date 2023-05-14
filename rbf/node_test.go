@@ -35,4 +35,5 @@ func TestNode(t *testing.T) {
 			t.Errorf("%s: for input %v, expected output %v, but got %v", test.name,
 				test.input, test.expected, actual)
 		}
-		if test.node.Outp
+		if test.node.OutputCount() != len(test.node.OutputWeights) {
+			t.Errorf(
