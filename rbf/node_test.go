@@ -36,4 +36,4 @@ func TestNode(t *testing.T) {
 				test.input, test.expected, actual)
 		}
 		if test.node.OutputCount() != len(test.node.OutputWeights) {
-			t.Errorf("%s: expected output count of %d, got %d", test.name, len(test.nod
+			t.Errorf("%s: expected output count of %d, got %d", test.name, len(test.node.OutputWeights), test.node.OutputCo
