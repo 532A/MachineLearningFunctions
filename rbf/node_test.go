@@ -41,4 +41,7 @@ func TestNode(t *testing.T) {
 	}
 }
 
-func TestNodeMemory(t *testi
+func TestNodeMemory(t *testing.T) {
+	a := &Node{
+		Width:         0.5,
+		Centroi
