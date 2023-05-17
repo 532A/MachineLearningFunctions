@@ -44,4 +44,5 @@ func TestNode(t *testing.T) {
 func TestNodeMemory(t *testing.T) {
 	a := &Node{
 		Width:         0.5,
-		Centroi
+		Centroid:      []float64{1.0, 2.0},
+		InputWeights:  []fl
