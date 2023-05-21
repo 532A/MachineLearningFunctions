@@ -50,4 +50,5 @@ func TestNodeMemory(t *testing.T) {
 	}
 	b := &Node{
 		Width:         1.0,
-		Centroid:      []
+		Centroid:      []float64{1.0, 2.0}, // Centroid doesn't change.
+		Input
