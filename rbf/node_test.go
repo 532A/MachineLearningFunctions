@@ -57,4 +57,5 @@ func TestNodeMemory(t *testing.T) {
 
 	b.SetMemory(a.GetMemory())
 
-	if !reflect.De
+	if !reflect.DeepEqual(a, b) {
+		t.Errorf("Expected b == 
