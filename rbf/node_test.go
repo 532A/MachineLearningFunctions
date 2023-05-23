@@ -52,4 +52,9 @@ func TestNodeMemory(t *testing.T) {
 		Width:         1.0,
 		Centroid:      []float64{1.0, 2.0}, // Centroid doesn't change.
 		InputWeights:  []float64{-1, -1},
-		OutputWeights: []float64{-1,
+		OutputWeights: []float64{-1, -1},
+	}
+
+	b.SetMemory(a.GetMemory())
+
+	if !reflect.De
