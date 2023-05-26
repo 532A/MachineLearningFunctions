@@ -59,4 +59,7 @@ func TestNodeMemory(t *testing.T) {
 
 	if !reflect.DeepEqual(a, b) {
 		t.Errorf("Expected b == a after setting memory, but got false.")
-		t
+		t.Errorf("a: %v", a)
+		t.Errorf("b: %v", b)
+	}
+}
