@@ -86,3 +86,33 @@ func StopWhenChannelReceives() (Stopper, chan interface{}) {
 		}
 	}, c
 }
+
+// StopAfterXIterations stops training after the specified iteration count has completed.
+func StopAfterXIterations(x int) Stopper {
+	return func(iterations int, e float64) bool {
+		if iterations >= x {
+			return true
+		}
+		return false
+	}
+}
+
+// StopWhenErrorIsLessThan stops training when the error is below the value provided.
+func StopWhenErrorIsLessThan(e float64) Stopper {
+	return func(iterations int, ee float64) bool {
+		if ee < e {
+			return true
+		}
+		return false
+	}
+}
+
+// StopWhenErrorIsGreaterThan stops training when the error is greater than the value provided.
+func StopWhenErrorIsGreaterThan(e float64) Stopper {
+	return func(iterations int, ee float64) bool {
+		if ee > e {
+			return true
+		}
+		return false
+	}
+}
