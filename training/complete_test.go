@@ -87,3 +87,69 @@ type algorithmMock struct {
 func (am *algorithmMock) Next(ev Evaluator) (updatedMemory []float64, err error) {
 	am.nextCalled++
 	am.e, err = ev()
+	return am.memory, err
+}
+func (am *algorithmMock) BestMemory() (memory []float64) {
+	am.bestMemoryCalled++
+	return am.memory
+}
+func (am *algorithmMock) BestError() (e float64) {
+	am.bestErrorCalled++
+	return am.e
+}
+
+func TestStopAfterXIterations(t *testing.T) {
+	tests := []struct {
+		name       string
+		stopper    Stopper
+		iterations int
+		e          float64
+		expected   bool
+	}{
+		{
+			name:       "Don't stop until iterations have been cleared",
+			stopper:    StopAfterXIterations(10),
+			iterations: 9,
+			e:          1.0,
+			expected:   false,
+		},
+		{
+			name:       "Stop when iterations have been cleared",
+			stopper:    StopAfterXIterations(10),
+			iterations: 10,
+			e:          1.0,
+			expected:   true,
+		},
+	}
+
+	for _, test := range tests {
+		actual := test.stopper(test.iterations, test.e)
+		if actual != test.expected {
+			t.Errorf("%s: expected %v, got %v", test.name, test.expected, actual)
+		}
+	}
+}
+
+func TestStopWhenErrorIsLessThan(t *testing.T) {
+	tests := []struct {
+		name       string
+		stopper    Stopper
+		iterations int
+		e          float64
+		expected   bool
+	}{
+		{
+			name:       "Don't stop until error is less than the value",
+			stopper:    StopWhenErrorIsLessThan(1.0),
+			iterations: 9,
+			e:          2.0,
+			expected:   false,
+		},
+		{
+			name:       "Stop when error is less than the value",
+			stopper:    StopWhenErrorIsLessThan(1.0),
+			iterations: 10,
+			e:          0.9,
+			expected:   true,
+		},
+	}
