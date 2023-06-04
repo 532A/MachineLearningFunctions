@@ -210,3 +210,13 @@ func TestStopWhenChannelReceives(t *testing.T) {
 func TestStopWhenContextCancelled(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 	s := StopWhenContextCancelled(ctx)
+	beforeCancelled := s(0, 1.0)
+	if beforeCancelled {
+		t.Fatalf("expected to carry on until the context is cancelled")
+	}
+	cancel()
+	afterCancelled := s(1, 2.0)
+	if !afterCancelled {
+		t.Fatalf("expected to stop after the channel is cancelled")
+	}
+}
