@@ -153,3 +153,60 @@ func TestStopWhenErrorIsLessThan(t *testing.T) {
 			expected:   true,
 		},
 	}
+
+	for _, test := range tests {
+		actual := test.stopper(test.iterations, test.e)
+		if actual != test.expected {
+			t.Errorf("%s: expected %v, got %v", test.name, test.expected, actual)
+		}
+	}
+}
+
+func TestStopWhenErrorIsGreaterThan(t *testing.T) {
+	tests := []struct {
+		name       string
+		stopper    Stopper
+		iterations int
+		e          float64
+		expected   bool
+	}{
+		{
+			name:       "Don't stop until error is greater than the value",
+			stopper:    StopWhenErrorIsGreaterThan(1.0),
+			iterations: 9,
+			e:          0.5,
+			expected:   false,
+		},
+		{
+			name:       "Stop when error is greater than the value",
+			stopper:    StopWhenErrorIsGreaterThan(1.0),
+			iterations: 10,
+			e:          1.5,
+			expected:   true,
+		},
+	}
+
+	for _, test := range tests {
+		actual := test.stopper(test.iterations, test.e)
+		if actual != test.expected {
+			t.Errorf("%s: expected %v, got %v", test.name, test.expected, actual)
+		}
+	}
+}
+
+func TestStopWhenChannelReceives(t *testing.T) {
+	s, c := StopWhenChannelReceives()
+	beforeSent := s(0, 1.0)
+	if beforeSent {
+		t.Fatalf("expected to carry on until the channel receives an item")
+	}
+	c <- struct{}{}
+	afterSent := s(1, 2.0)
+	if !afterSent {
+		t.Fatalf("expected to stop after the channel receives an item")
+	}
+}
+
+func TestStopWhenContextCancelled(t *testing.T) {
+	ctx, cancel := context.WithCancel(context.Background())
+	s := StopWhenContextCancelled(ctx)
