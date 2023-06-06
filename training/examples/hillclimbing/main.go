@@ -44,3 +44,51 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
+			if r > z {
+				z = r
+			}
+		}
+		return z
+	}
+
+	trainee := FuncTrainee{
+		F: f,
+	}
+
+	highest := math.MaxFloat64
+	evaluator := func() (e float64, err error) {
+		z := f(trainee.X, trainee.Y)
+		return highest - z, nil
+	}
+
+	// Start off the trainee at a location.
+	memory := []float64{1, 1}
+	t := training.NewHillClimbing(memory, 0.2, 0.1)
+
+	// Keep walking.
+	for i := 0; i < anim.LoopCount; i++ {
+		img := image.NewPaletted(imgSize, palette)
+		projectionAngle := 30.0
+
+		vis := func(x, y float64) (z float64) {
+			z = f(x, y)
+			// Put a steep hill where the trainee hill climber currently is...
+			pos, err := rbf.NewGaussianVector(1.0, []float64{trainee.X, trainee.Y}, 0.05)([]float64{x, y})
+			if err != nil {
+				panic(err)
+			}
+			if pos > z {
+				z = z + (pos * 0.1) // 10% higher
+			}
+			return z
+		}
+
+		d := projection.New(-1.0, 1.0, vis, imgSize.Dx(), imgSize.Dy(), projectionAngle)
+		d.Draw(img)
+
+		// Add the image to the output.
+		anim.Delay = append(anim.Delay, delay)
+		anim.Image = append(anim.Image, img)
+
+		// Move some more.
+		memory, _ := t.Next(evaluator)
