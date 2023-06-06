@@ -92,3 +92,33 @@ func main() {
 
 		// Move some more.
 		memory, _ := t.Next(evaluator)
+		fmt.Println(memory)
+		trainee.SetMemory(memory)
+	}
+
+	gif.EncodeAll(file, &anim)
+}
+
+type FuncTrainee struct {
+	F    func(x, y float64) (z float64)
+	X, Y float64
+}
+
+func (ft *FuncTrainee) Calculate(input []float64) (output []float64, err error) {
+	x, y := input[0], input[1]
+	z := ft.F(x, y)
+	return []float64{z}, nil
+}
+
+func (ft *FuncTrainee) GetMemorySize() int {
+	return 2
+}
+
+func (ft *FuncTrainee) GetMemory() []float64 {
+	return []float64{ft.X, ft.Y}
+}
+
+func (ft *FuncTrainee) SetMemory(m []float64) {
+	ft.X = m[0]
+	ft.Y = m[1]
+}
