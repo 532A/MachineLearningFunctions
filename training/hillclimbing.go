@@ -4,4 +4,4 @@ import (
 	"math"
 )
 
-// NewHillClimbing uses
+// NewHillClimbing uses random parameters from the Min to Max value to 
