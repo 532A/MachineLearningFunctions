@@ -4,4 +4,6 @@ import (
 	"math"
 )
 
-// NewHillClimbing uses random parameters from the Min to Max value to 
+// NewHillClimbing uses random parameters from the Min to Max value to train, attempting to minimise
+// error.
+func NewHillCl
