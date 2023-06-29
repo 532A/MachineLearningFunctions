@@ -11,4 +11,6 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 	hc := &HillClimbing{
 		Min:      min,
 		Max:      max,
-		current:  m
+		current:  memory,
+		e:        math.MaxFloat64,
+		velocity: velocit
