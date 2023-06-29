@@ -13,4 +13,7 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 		Max:      max,
 		current:  memory,
 		e:        math.MaxFloat64,
-		velocity: velocit
+		velocity: velocity,
+	}
+	hc.movements = []float64{
+		-accelerati
