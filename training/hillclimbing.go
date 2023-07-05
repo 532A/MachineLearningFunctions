@@ -17,4 +17,6 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 	}
 	hc.movements = []float64{
 		-acceleration,     // Go back
-		-1 / acceleration, // Go back
+		-1 / acceleration, // Go back slower
+		0,                 // Stop
+		1 / acceleration,  
