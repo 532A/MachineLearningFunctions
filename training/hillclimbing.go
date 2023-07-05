@@ -20,4 +20,9 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 		-1 / acceleration, // Go back slower
 		0,                 // Stop
 		1 / acceleration,  // Go forward slower
-		acceleration,      // 
+		acceleration,      // Go forward
+	}
+	return hc
+}
+
+// HillClimbing is a training
