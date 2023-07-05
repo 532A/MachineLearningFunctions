@@ -25,4 +25,4 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 	return hc
 }
 
-// HillClimbing is a training
+// HillClimbing is a training algorithm which uses random parameters from the 
