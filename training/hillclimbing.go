@@ -19,4 +19,5 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 		-acceleration,     // Go back
 		-1 / acceleration, // Go back slower
 		0,                 // Stop
-		1 / acceleration,  
+		1 / acceleration,  // Go forward slower
+		acceleration,      // 
