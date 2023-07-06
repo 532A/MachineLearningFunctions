@@ -27,4 +27,6 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 
 // HillClimbing is a training algorithm which uses random parameters from the Min to Max value to train,
 // attempting to minimise error.
-type HillClimbing
+type HillClimbing struct {
+	current []float64
+	// best memory and error recorded d
