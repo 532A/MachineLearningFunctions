@@ -29,4 +29,7 @@ func NewHillClimbing(memory []float64, velocity, acceleration float64) *HillClim
 // attempting to minimise error.
 type HillClimbing struct {
 	current []float64
-	// best memory and error recorded d
+	// best memory and error recorded during training.
+	best []float64
+	e    float64
+	// Min and Max va
