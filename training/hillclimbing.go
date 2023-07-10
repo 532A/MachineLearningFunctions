@@ -34,4 +34,6 @@ type HillClimbing struct {
 	e    float64
 	// Min and Max values for memory values.
 	Min, Max float64
-	// Th
+	// The amount to move in each direction.
+	velocity float64
+	//
