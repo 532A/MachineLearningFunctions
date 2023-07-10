@@ -32,4 +32,6 @@ type HillClimbing struct {
 	// best memory and error recorded during training.
 	best []float64
 	e    float64
-	// Min and Max va
+	// Min and Max values for memory values.
+	Min, Max float64
+	// Th
