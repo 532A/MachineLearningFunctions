@@ -36,4 +36,5 @@ type HillClimbing struct {
 	Min, Max float64
 	// The amount to move in each direction.
 	velocity float64
-	//
+	// movements (forward, back, stay still)
+	mov
