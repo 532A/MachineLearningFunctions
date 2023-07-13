@@ -37,4 +37,7 @@ type HillClimbing struct {
 	// The amount to move in each direction.
 	velocity float64
 	// movements (forward, back, stay still)
-	mov
+	movements []float64
+}
+
+// Next records the error 
