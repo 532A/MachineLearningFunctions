@@ -40,4 +40,4 @@ type HillClimbing struct {
 	movements []float64
 }
 
-// Next records the error 
+// Next records the error from the previous set of values, and returns a 
