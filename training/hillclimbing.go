@@ -41,4 +41,5 @@ type HillClimbing struct {
 }
 
 // Next records the error from the previous set of values, and returns a new set of values to try.
-func (hc *HillClimbing)
+func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
+	for
