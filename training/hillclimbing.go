@@ -46,4 +46,6 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 		// Calculate the best move for this dimension.
 		bestMovement := 0
 		bestError := math.MaxFloat64
-		current := h
+		current := hc.current[i]
+		for mi, mv := range hc.movements {
+			hc.c
