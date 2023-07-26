@@ -48,4 +48,5 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 		bestError := math.MaxFloat64
 		current := hc.current[i]
 		for mi, mv := range hc.movements {
-			hc.c
+			hc.current[i] = current + (hc.velocity * mv)
+	
