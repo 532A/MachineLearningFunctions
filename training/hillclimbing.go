@@ -44,4 +44,6 @@ type HillClimbing struct {
 func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 	for i := range hc.current {
 		// Calculate the best move for this dimension.
-		bestMovement :=
+		bestMovement := 0
+		bestError := math.MaxFloat64
+		current := h
