@@ -51,4 +51,8 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 			hc.current[i] = current + (hc.velocity * mv)
 			e, err := ev()
 			if err != nil {
-				return hc.curren
+				return hc.current, err
+			}
+			if e < bestError {
+				bestError = e
+				
