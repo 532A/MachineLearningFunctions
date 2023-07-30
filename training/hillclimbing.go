@@ -55,4 +55,7 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 			}
 			if e < bestError {
 				bestError = e
-				
+				bestMovement = mi
+			}
+		}
+		// Stick with th
