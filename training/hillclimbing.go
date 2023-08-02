@@ -62,4 +62,9 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 		hc.current[i] = current + (hc.velocity * hc.movements[bestMovement])
 	}
 	// Calculate the error across all dimensions.
-	e, err := 
+	e, err := ev()
+	hc.e = e
+	return hc.current, err
+}
+
+// Best
