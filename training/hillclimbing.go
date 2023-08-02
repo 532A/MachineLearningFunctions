@@ -59,4 +59,6 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 			}
 		}
 		// Stick with the best move for this dimension.
-		hc.current[i]
+		hc.current[i] = current + (hc.velocity * hc.movements[bestMovement])
+	}
+	// C
