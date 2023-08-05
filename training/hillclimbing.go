@@ -67,4 +67,5 @@ func (hc *HillClimbing) Next(ev Evaluator) ([]float64, error) {
 	return hc.current, err
 }
 
-// Best
+// BestError returns the best (lowest) error discovered by training.
+// If 
