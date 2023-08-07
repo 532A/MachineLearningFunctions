@@ -73,4 +73,5 @@ func (hc *HillClimbing) BestError() (e float64) {
 	return hc.e
 }
 
-// BestMemory returns the best set of parameters dis
+// BestMemory returns the best set of parameters discovered by the algorithm during training.
+// If n
