@@ -74,4 +74,5 @@ func (hc *HillClimbing) BestError() (e float64) {
 }
 
 // BestMemory returns the best set of parameters discovered by the algorithm during training.
-// If n
+// If no training has happened, it will return nil.
+f
