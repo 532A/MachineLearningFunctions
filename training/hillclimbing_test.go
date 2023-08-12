@@ -7,4 +7,5 @@ import (
 	"testing"
 )
 
-func Te
+func TestHillClimbing(t *testing.T) {
+	// Start wit
