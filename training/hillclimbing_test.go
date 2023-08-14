@@ -8,4 +8,7 @@ import (
 )
 
 func TestHillClimbing(t *testing.T) {
-	// Start wit
+	// Start with 1*1
+	memory := []float64{1, 1}
+	desiredOutput := 25.0
+	// Tr
