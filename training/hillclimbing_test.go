@@ -14,4 +14,7 @@ func TestHillClimbing(t *testing.T) {
 	// Train finding two numbers which can be multiplied together to equal 25.
 	toTrain := func() (e float64, err error) {
 		result := memory[0] * memory[1]
-		e = math.Pow(result-desired
+		e = math.Pow(result-desiredOutput, 2)
+		return
+	}
+	// Train the algorithm, but
