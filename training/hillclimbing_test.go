@@ -17,4 +17,5 @@ func TestHillClimbing(t *testing.T) {
 		e = math.Pow(result-desiredOutput, 2)
 		return
 	}
-	// Train the algorithm, but step by 1 each time, so it's easy to test and know t
+	// Train the algorithm, but step by 1 each time, so it's easy to test and know that we'll
+	// get the desired factors of 5*5 in
