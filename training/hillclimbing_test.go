@@ -17,4 +17,4 @@ func TestHillClimbing(t *testing.T) {
 		e = math.Pow(result-desiredOutput, 2)
 		return
 	}
-	// Train the algorithm, but
+	// Train the algorithm, but step by 1 each time, so it's easy to test and know t
