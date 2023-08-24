@@ -19,4 +19,6 @@ func TestHillClimbing(t *testing.T) {
 	}
 	// Train the algorithm, but step by 1 each time, so it's easy to test and know that we'll
 	// get the desired factors of 5*5 in just a few steps.
-	hc := NewHillClimbing(memor
+	hc := NewHillClimbing(memory, 1, 1)
+	for i := 1; i < 5; i++ {
+		updatedMemor
