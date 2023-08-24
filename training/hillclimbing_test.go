@@ -21,4 +21,6 @@ func TestHillClimbing(t *testing.T) {
 	// get the desired factors of 5*5 in just a few steps.
 	hc := NewHillClimbing(memory, 1, 1)
 	for i := 1; i < 5; i++ {
-		updatedMemor
+		updatedMemory, err := hc.Next(toTrain)
+		if err != nil {
+			t
