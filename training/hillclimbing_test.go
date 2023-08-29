@@ -25,4 +25,5 @@ func TestHillClimbing(t *testing.T) {
 		if err != nil {
 			t.Errorf("unexpected error training simple multiplication: %v", err)
 		}
-		if !reflect.DeepEqual(updatedMem
+		if !reflect.DeepEqual(updatedMemory, []float64{1.0 + float64(i), 1.0 + float64(i)}) {
+		
