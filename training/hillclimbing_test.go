@@ -23,4 +23,6 @@ func TestHillClimbing(t *testing.T) {
 	for i := 1; i < 5; i++ {
 		updatedMemory, err := hc.Next(toTrain)
 		if err != nil {
-			t.Errorf("unexpected error training simple multipl
+			t.Errorf("unexpected error training simple multiplication: %v", err)
+		}
+		if !reflect.DeepEqual(updatedMem
