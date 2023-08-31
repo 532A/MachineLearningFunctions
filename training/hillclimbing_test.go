@@ -28,3 +28,5 @@ func TestHillClimbing(t *testing.T) {
 		if !reflect.DeepEqual(updatedMemory, []float64{1.0 + float64(i), 1.0 + float64(i)}) {
 			t.Errorf("expected the first movement to take the parameters up by 1, but got: %v", updatedMemory)
 		}
+	}
+	// Check that training doesn't
