@@ -26,4 +26,5 @@ func TestHillClimbing(t *testing.T) {
 			t.Errorf("unexpected error training simple multiplication: %v", err)
 		}
 		if !reflect.DeepEqual(updatedMemory, []float64{1.0 + float64(i), 1.0 + float64(i)}) {
-			t.Errorf("expected the first movement to take the parameters
+			t.Errorf("expected the first movement to take the parameters up by 1, but got: %v", updatedMemory)
+		}
