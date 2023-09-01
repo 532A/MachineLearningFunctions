@@ -30,4 +30,5 @@ func TestHillClimbing(t *testing.T) {
 		}
 	}
 	// Check that training doesn't make a difference once we've got the correct value.
-	up
+	updatedMemory, _ := hc.Next(toTrain)
+	if !reflect.DeepE
