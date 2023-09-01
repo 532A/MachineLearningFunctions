@@ -29,4 +29,5 @@ func TestHillClimbing(t *testing.T) {
 			t.Errorf("expected the first movement to take the parameters up by 1, but got: %v", updatedMemory)
 		}
 	}
-	// Check that training doesn't
+	// Check that training doesn't make a difference once we've got the correct value.
+	up
