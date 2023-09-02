@@ -35,4 +35,5 @@ func TestHillClimbing(t *testing.T) {
 		t.Errorf("expected result to be 5*5, but was")
 	}
 	// Check that the error is now zero.
-	if hc.
+	if hc.BestError() != 0.0 {
+		t.Errorf("expected the error to
