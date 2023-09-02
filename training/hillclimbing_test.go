@@ -32,4 +32,7 @@ func TestHillClimbing(t *testing.T) {
 	// Check that training doesn't make a difference once we've got the correct value.
 	updatedMemory, _ := hc.Next(toTrain)
 	if !reflect.DeepEqual(updatedMemory, []float64{5.0, 5.0}) {
-		t.Errorf("expected result to be 5*5, bu
+		t.Errorf("expected result to be 5*5, but was")
+	}
+	// Check that the error is now zero.
+	if hc.
