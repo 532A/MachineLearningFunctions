@@ -36,4 +36,6 @@ func TestHillClimbing(t *testing.T) {
 	}
 	// Check that the error is now zero.
 	if hc.BestError() != 0.0 {
-		t.Errorf("expected the error to
+		t.Errorf("expected the error to be zero, but got: %v", hc.BestError())
+	}
+	// 
