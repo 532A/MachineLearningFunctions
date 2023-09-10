@@ -45,4 +45,4 @@ func TestHillClimbing(t *testing.T) {
 }
 
 func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
-	hc := 
+	hc := NewHillClimbing([]float64{0, 1, 2}, 1, 1)
