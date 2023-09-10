@@ -40,4 +40,8 @@ func TestHillClimbing(t *testing.T) {
 	}
 	// Check that the best memory is 5*5 as expected.
 	if !reflect.DeepEqual(hc.BestMemory(), []float64{5.0, 5.0}) {
-		t.Errorf("expected the error to be zero, but got: %
+		t.Errorf("expected the error to be zero, but got: %v", hc.BestError())
+	}
+}
+
+func TestHillClimbingRet
