@@ -44,4 +44,5 @@ func TestHillClimbing(t *testing.T) {
 	}
 }
 
-func TestHillClimbingRet
+func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
+	hc := 
