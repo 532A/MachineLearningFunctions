@@ -46,3 +46,5 @@ func TestHillClimbing(t *testing.T) {
 
 func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
 	hc := NewHillClimbing([]float64{0, 1, 2}, 1, 1)
+	ev := func() (e float64, err error) {
+		err = errors.New
