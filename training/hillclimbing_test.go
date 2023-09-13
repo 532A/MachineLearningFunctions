@@ -52,4 +52,6 @@ func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
 	}
 	_, err := hc.Next(ev)
 	if err.Error() != "expected error" {
-		t.Errorf("unexpected error message while evaluatin
+		t.Errorf("unexpected error message while evaluating function: %v", err)
+	}
+}
