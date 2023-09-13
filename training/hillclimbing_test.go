@@ -51,4 +51,5 @@ func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
 		return
 	}
 	_, err := hc.Next(ev)
-	if err
+	if err.Error() != "expected error" {
+		t.Errorf(
