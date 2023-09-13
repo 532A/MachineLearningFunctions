@@ -52,4 +52,4 @@ func TestHillClimbingReturnsErrorsFromTheEvaluator(t *testing.T) {
 	}
 	_, err := hc.Next(ev)
 	if err.Error() != "expected error" {
-		t.Errorf(
+		t.Errorf("unexpected error message while evaluatin
