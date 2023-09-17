@@ -4,4 +4,9 @@ package training
 // Examples include rbf.Network and rbf.Node.
 type Trainee interface {
 	Calculate(input []float64) (output []float64, err error)
-	GetMemorySiz
+	GetMemorySize() int
+	GetMemory() []float64
+	SetMemory(m []float64)
+}
+
+// A
