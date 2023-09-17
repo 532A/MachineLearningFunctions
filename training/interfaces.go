@@ -9,4 +9,4 @@ type Trainee interface {
 	SetMemory(m []float64)
 }
 
-// A
+// An Evaluator executes a run of the training data against 
