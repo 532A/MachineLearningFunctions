@@ -9,4 +9,5 @@ type Trainee interface {
 	SetMemory(m []float64)
 }
 
-// An Evaluator executes a run of the training data against 
+// An Evaluator executes a run of the training data against the trainee and determines the error.
+type Evaluato
