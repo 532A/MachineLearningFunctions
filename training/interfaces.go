@@ -12,4 +12,5 @@ type Trainee interface {
 // An Evaluator executes a run of the training data against the trainee and determines the error.
 type Evaluator func() (e float64, err error)
 
-// Algorithm d
+// Algorithm defines a training algorith, e.g. RandomGreedy.
+type Algori
