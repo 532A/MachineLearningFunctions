@@ -13,4 +13,5 @@ type Trainee interface {
 type Evaluator func() (e float64, err error)
 
 // Algorithm defines a training algorith, e.g. RandomGreedy.
-type Algori
+type Algorithm interface {
+	Next(ev Evaluator) (updatedMemory []float64, 
