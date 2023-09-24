@@ -10,4 +10,6 @@ type Trainee interface {
 }
 
 // An Evaluator executes a run of the training data against the trainee and determines the error.
-type Evaluato
+type Evaluator func() (e float64, err error)
+
+// Algorithm d
