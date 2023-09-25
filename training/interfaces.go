@@ -19,4 +19,5 @@ type Algorithm interface {
 	BestError() (e float64)
 }
 
-// Data is data used t
+// Data is data used to train something.
+type Data s
