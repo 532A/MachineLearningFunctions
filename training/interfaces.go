@@ -20,4 +20,7 @@ type Algorithm interface {
 }
 
 // Data is data used to train something.
-type Data s
+type Data struct {
+	Input    []float64
+	Expected []float64
+}
