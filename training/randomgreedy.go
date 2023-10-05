@@ -6,4 +6,4 @@ import (
 	"github.com/a-h/ml/random"
 )
 
-// NewRandomGreedy uses random paramet
+// NewRandomGreedy uses random parameters from the Min to Max value to train, attempting to minimise
