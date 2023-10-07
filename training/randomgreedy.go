@@ -10,4 +10,7 @@ import (
 // error.
 func NewRandomGreedy(memory []float64) *RandomGreedy {
 	min, max := -10.0, 10.0
-	return &R
+	return &RandomGreedy{
+		Min:     min,
+		Max:     max,
+		current: memory,
