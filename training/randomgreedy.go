@@ -8,4 +8,6 @@ import (
 
 // NewRandomGreedy uses random parameters from the Min to Max value to train, attempting to minimise
 // error.
-func NewRandomGreedy(memory []float
+func NewRandomGreedy(memory []float64) *RandomGreedy {
+	min, max := -10.0, 10.0
+	return &R
