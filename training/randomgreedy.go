@@ -14,3 +14,5 @@ func NewRandomGreedy(memory []float64) *RandomGreedy {
 		Min:     min,
 		Max:     max,
 		current: memory,
+		best:    nil,
+		e:       math.MaxFloat64,
