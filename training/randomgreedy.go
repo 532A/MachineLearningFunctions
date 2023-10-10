@@ -19,4 +19,4 @@ func NewRandomGreedy(memory []float64) *RandomGreedy {
 	}
 }
 
-// RandomGreedy is a training algorithm which u
+// RandomGreedy is a training algorithm which uses random parameters from the Min to Max value to train,
