@@ -16,3 +16,7 @@ func NewRandomGreedy(memory []float64) *RandomGreedy {
 		current: memory,
 		best:    nil,
 		e:       math.MaxFloat64,
+	}
+}
+
+// RandomGreedy is a training algorithm which u
