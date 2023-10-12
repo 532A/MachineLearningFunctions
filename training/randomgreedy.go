@@ -21,4 +21,6 @@ func NewRandomGreedy(memory []float64) *RandomGreedy {
 
 // RandomGreedy is a training algorithm which uses random parameters from the Min to Max value to train,
 // attempting to minimise error.
-type RandomGreedy struc
+type RandomGreedy struct {
+	current []float64
+	// best memory and error recor
