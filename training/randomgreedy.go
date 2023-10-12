@@ -23,4 +23,7 @@ func NewRandomGreedy(memory []float64) *RandomGreedy {
 // attempting to minimise error.
 type RandomGreedy struct {
 	current []float64
-	// best memory and error recor
+	// best memory and error recorded during training.
+	best []float64
+	e    float64
+	// Min and 
