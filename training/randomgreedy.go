@@ -31,4 +31,4 @@ type RandomGreedy struct {
 }
 
 // Next records the error from the previous set of values, and returns a new set of values to try.
-fu
+func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, erro
