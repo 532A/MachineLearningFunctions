@@ -30,4 +30,4 @@ type RandomGreedy struct {
 	Min, Max float64
 }
 
-// Next r
+// Next records the error from the previous 
