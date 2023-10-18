@@ -38,3 +38,6 @@ func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, error) {
 	}
 	if e < rg.e {
 		rg.best = rg.current
+		rg.e = e
+	}
+	rg.current = random.Float64Vector(rg.Min, rg.Ma
