@@ -34,4 +34,7 @@ type RandomGreedy struct {
 func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, error) {
 	e, err := ev()
 	if err != nil {
-		return rg.
+		return rg.current, err
+	}
+	if e < rg.e {
+		rg.best = rg.current
