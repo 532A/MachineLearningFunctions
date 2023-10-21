@@ -45,4 +45,5 @@ func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, error) {
 }
 
 // BestError returns the best (lowest) error discovered by training.
-// If no t
+// If no training has happened, it will math.MaxFloat64.
+func (rg *Rand
