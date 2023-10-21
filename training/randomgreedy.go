@@ -44,4 +44,5 @@ func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, error) {
 	return rg.current, nil
 }
 
-// BestError returns the best (lo
+// BestError returns the best (lowest) error discovered by training.
+// If no t
