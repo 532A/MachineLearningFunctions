@@ -41,4 +41,7 @@ func (rg *RandomGreedy) Next(ev Evaluator) ([]float64, error) {
 		rg.e = e
 	}
 	rg.current = random.Float64Vector(rg.Min, rg.Max, len(rg.current))
-	return rg.current, 
+	return rg.current, nil
+}
+
+// BestError returns the best (lo
