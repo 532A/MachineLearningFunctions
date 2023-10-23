@@ -50,4 +50,4 @@ func (rg *RandomGreedy) BestError() (e float64) {
 	return rg.e
 }
 
-// BestMemory returns the best set of parame
+// BestMemory returns the best set of parameters discovered by the algorithm during tr
