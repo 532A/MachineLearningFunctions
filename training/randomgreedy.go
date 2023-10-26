@@ -51,4 +51,5 @@ func (rg *RandomGreedy) BestError() (e float64) {
 }
 
 // BestMemory returns the best set of parameters discovered by the algorithm during training.
-// If no training has happened, it will re
+// If no training has happened, it will return nil.
+func (rg *RandomGreedy) BestMemory() (memory []float6
