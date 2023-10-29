@@ -1,1 +1,1 @@
-# Machine Learning Functions\n\nA stocked library of cutting-edge funct
+# Machine Learning Functions\n\nA stocked library of cutting-edge functions and algorithms specifically designed for machine learning.\n
