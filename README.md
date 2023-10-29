@@ -1,1 +1,1 @@
-# Machine Learning Functions\n\nA stocked library of cutting-edge functions and algorithms specifically designed for machine learning.\n\n## Distance Algorithms\n\n* `distance.Cheby
+# Machine Learning Functions\n\nA stocked library of cutting-edge functions and algorithms specifically designed for machine learning.\n\n## Distance Algorithms\n\n* `distance.Chebyshev`\n* `distance.Euclidean`\n* `distance
